@@ -1,0 +1,15 @@
+.Layout header {
+  background-color: antiquewhite;
+}
+
+.Layout aside {
+  background-color: azure;
+}
+
+.Layout main {
+  background-color: rgb(197, 159, 233);
+}
+
+.Layout footer {
+  background-color: rgb(191, 186, 186);
+}
