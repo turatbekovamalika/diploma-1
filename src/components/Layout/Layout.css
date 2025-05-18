@@ -17,6 +17,7 @@
 }
 
 .Layout main {
+  flex: 80% 1 1;
   background-color: rgb(197, 159, 233);
 }
 
