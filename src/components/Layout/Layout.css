@@ -8,9 +8,9 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: antiquewhite;
-}
 
+  background-color: #f6ddcc;
+}
 .Layout aside {
   flex: 20% 0 0;
   background-color: azure;
