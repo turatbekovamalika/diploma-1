@@ -7,10 +7,9 @@ export default function Layout(props) {
       <header>
         <Nav />
       </header>
+      <main>{props.children}</main>
 
       <aside>ASIDE</aside>
-
-      <main>{props.children}</main>
 
       <footer>Footer</footer>
     </div>
