@@ -1,5 +1,5 @@
 .Layout {
-  max-width: 789px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -9,21 +9,23 @@
   flex-grow: 0;
   flex-shrink: 0;
 
-  background-color: #f6ddcc;
+  background-color: #f5b7b1;
 }
 .Layout aside {
   flex: 20% 0 0;
-  background-color: azure;
+  background-color: #f9ece4;
 }
 
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(197, 159, 233);
+  background-color: #f6ddcc;
+  padding: 100px;
 }
 
 .Layout footer {
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgb(191, 186, 186);
+  background-color: #f5b7b1;
+  padding: 100px;
 }
