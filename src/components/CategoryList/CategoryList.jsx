@@ -7,21 +7,25 @@ import { categoryCollection } from "../../firebase";
 
 export default function CategoryList() {
   const [categories, setCategories] = useState([]);
+  //выполнить эту функциу один раз
+    useEffect(() => {
+//получить категроии из списка категорий
+        getDocs(categoryCollection)
+            .then(snapshot => {
+                //категории будут храниться в snapshot.docs
+                //слздать массив для категорий
+ const newCategories = [];
+ //заполнить массив данными из списка категорий
+                snapshot.docs.forEach(doc => {// doc это категория 
+                    const category = doc.data();
+                    category.id = doc.id;
 
-  useEffect(() => {
-    getDocs(categoryCollection).then((snapshot) => {
-      const newCategories = [];
-
-      snapshot.docs.forEach((doc) => {
-        const category = doc.data();
-        category.id = doc.id;
-
-        newCategories.push(category);
-      });
-
-      setCategories(newCategories);
-    });
-  }, []);
+                    newCategories.push(category);
+                });
+                  //задать новый массив как состояние компонента
+                setCategories(newCategories);
+            })
+  
 
   const output = categories.map((category) => (
     <li key={category.id}>
