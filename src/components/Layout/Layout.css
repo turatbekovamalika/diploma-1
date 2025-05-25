@@ -23,7 +23,6 @@
 .Layout main {
   flex: 80% 1 1;
   background-color: rgb(255, 250, 250);
-  padding: 100px;
 }
 
 .Layout footer {

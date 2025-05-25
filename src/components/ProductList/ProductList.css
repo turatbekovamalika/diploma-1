@@ -5,6 +5,12 @@
 
   border-radius: 5px;
 }
+.ProductList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .ProductList .Product img {
   width: 250%;
