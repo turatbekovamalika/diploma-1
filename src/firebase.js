@@ -1,9 +1,15 @@
-// Import the functions you need from the SDKs you need
+// Импорт необходимых функций из SDK
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 
-// Your web app's Firebase configuration
+// Конфигурация вашего Firebase-приложения
 const firebaseConfig = {
   apiKey: "AIzaSyDi10lKyYvwkymqoUzs7UJoG3apV2n4e6E",
   authDomain: "diploma-5c1d2.firebaseapp.com",
@@ -13,11 +19,15 @@ const firebaseConfig = {
   appId: "1:575589830545:web:79ba07088c1622c4fdd430",
 };
 
-// Initialize Firebase
+// Инициализация Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// Получить список категорий и продуктов
+// Экспорт коллекций и auth
 export const categoryCollection = collection(db, "categories");
-export const productCollection = collection(db, "products"); // ✅ исправлено имя
+export const productCollection = collection(db, "products");
+const provider = new GoogleAuthProvider();
+export const logIn = () => signInWithPopup(auth, provider);
+export const logOut = () => signOut(auth);
+export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
