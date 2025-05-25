@@ -5,6 +5,9 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
+import { createContext } from "react";
+
+export const AppContext = createContext();
 export default function App() {
   return (
     <div className="App">
