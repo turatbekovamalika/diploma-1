@@ -9,7 +9,7 @@ export default function Category() {
   const category = categories.find((category) => params.path === category.path);
   return (
     <div className="Category">
-      <h1>Category</h1>
+      <h1>{category.name}</h1>
     </div>
   );
 }
