@@ -7,6 +7,8 @@ import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
+import Cart from "./pages/Cart";
+
 import { categoryCollection, productCollection } from "./firebase"; // ✅ правильный импорт
 
 export const AppContext = createContext({
@@ -55,6 +57,7 @@ export default function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
