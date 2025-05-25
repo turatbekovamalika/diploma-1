@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .ProductList .Product img {
   width: 100%;
+  border-radius: 5px;
 }
