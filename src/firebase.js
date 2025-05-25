@@ -27,6 +27,7 @@ const auth = getAuth(app);
 // Экспорт коллекций и auth
 export const categoryCollection = collection(db, "categories");
 export const productCollection = collection(db, "products");
+export const orderCollection = collection(db, "orders");
 const provider = new GoogleAuthProvider();
 export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);
