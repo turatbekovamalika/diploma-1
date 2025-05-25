@@ -8,6 +8,7 @@ import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
 import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
 
 import { categoryCollection, productCollection } from "./firebase"; // ✅ правильный импорт
 
@@ -67,6 +68,7 @@ export default function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
