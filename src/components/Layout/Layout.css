@@ -8,12 +8,16 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
+  background-color: #f5b7b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   background-color: #f5b7b1;
 }
 .Layout aside {
   flex: 20% 0 0;
-  background-color: #f5e6dc;
+  background-color: #f5b7b1;
 }
 
 .Layout main {
