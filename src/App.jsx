@@ -29,8 +29,8 @@ export default function App() {
   //выполнить эту функцию только когда содержимое корзинки меняетсяя
   useEffect(() => {
     //сохранить содержимое корзинки в памяти блаузера
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  });
 
   useEffect(() => {
     // получить категории
