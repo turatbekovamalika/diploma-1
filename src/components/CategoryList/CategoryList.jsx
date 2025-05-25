@@ -9,12 +9,10 @@ export default function CategoryList() {
   const output = categories
     .sort((a, b) => a.weight - b.weight)
     .map((category) => (
-      <li className="Category" key={category.id}>
-        <img src={category.picture} alt={category.name} />
-        <NavLink
-          to={"/category/" + category.path}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+      <li key={category.id}>
+        <NavLink className="Category" to={"/category/" + category.path}>
+          <img src={category.picture} alt={category.name} />
+
           {category.name}
         </NavLink>
       </li>
