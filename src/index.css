@@ -11,9 +11,20 @@ body {
   color: #f6c7c2;
   text-align: center;
   padding-left: 55px;
-  position: absolute;
 }
 
 .Home img {
   max-width: 959px;
+}
+button {
+  background-color: rgb(189, 98, 98);
+  padding: 4px;
+  border-radius: 5px;
+  color: rgb(105, 32, 32);
+  border: 1px solid rgb(106, 80, 80);
+}
+
+button:hover {
+  background-color: rgb(136, 70, 70);
+  color: rgb(228, 158, 158);
 }
