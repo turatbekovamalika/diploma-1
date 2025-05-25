@@ -16,11 +16,10 @@ export default function Layout(props) {
         <Auth />
         <CartLink />
       </header>
-
+      <main>{props.children}</main>
       <aside>
         <CategoryList />
       </aside>
-      <main>{props.children}</main>
 
       <footer>Footer</footer>
     </div>
