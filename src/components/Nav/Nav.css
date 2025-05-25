@@ -9,8 +9,10 @@
   color: #7b241c;
   display: block;
   padding: 25px;
-  margin-left: 55px;
+  margin-left: 23px;
+  font-weight: 700;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
+  font-size: 17px;
 }
