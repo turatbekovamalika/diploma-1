@@ -1,0 +1,14 @@
+.CartList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.CartList .CartItem {
+  padding: 10px;
+}
+
+.CartList .CartItem img {
+  width: 250px;
+  border-radius: 5px;
+}

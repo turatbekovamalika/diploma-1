@@ -14,7 +14,7 @@ export default function CartList() {
         <img src={product.picture} alt={product.name} />
         <Link to={"/product/" + product.slug}>{product.name}</Link>
         <span>{cart[product.id]} items</span>
-        <span>{product.price * cart[product.id]} som</span>
+        <span>{product.price * cart[product.id]} $</span>
       </div>
     ));
 
