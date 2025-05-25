@@ -9,12 +9,15 @@ export default function ProductList() {
   const output = products.map((product) => (
     <div className="Product" key={product.id}>
       <img src={product.picture} alt={product.name} />
-      <p>forever and always</p>
+      <div className="Tried">
+        {" "}
+        <p>forever and always</p>
+        <span>{product.price} $</span>
+      </div>
       <Link className="About-product" to={"/product/" + product.path}>
         {" "}
         {product.name}
       </Link>
-      <span>{product.price} $</span>
     </div>
   ));
   return <div className="ProductList">{output}</div>;

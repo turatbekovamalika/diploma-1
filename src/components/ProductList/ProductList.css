@@ -1,19 +1,17 @@
 .ProductList .Product {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  max-width: 253px;
   border: 1px solid rgb(202, 194, 194);
   border-radius: 5px;
 }
 
 .ProductList .Product img {
-  width: 100%;
+  width: 250%;
   border-radius: 5px;
 }
 .ProductList .Product span {
-  color: brown;
-  text-align: right;
-  margin: 20px 15px;
+  color: rgb(130, 56, 81);
   font-weight: 900;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -21,12 +19,17 @@
 .ProductList .Product .About-product {
   color: rgb(130, 56, 81);
   text-decoration: none;
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
 }
 
 .ProductList .Product p {
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(130, 56, 81);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.ProductList .Tried {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 20px;
 }
