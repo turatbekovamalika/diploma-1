@@ -23,10 +23,16 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.CategoryList p {
+  color: #c86960;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
 
 .CategoryList img {
-  width: 250px;
-  height: 290px;
+  width: 240px;
+  height: 279px;
   border-radius: 5px;
   box-shadow: 0 0 10px 0px rgb(205, 105, 139);
 }
@@ -38,7 +44,6 @@
 .CategoryList .Category {
   display: flex;
   flex-direction: column;
-  margin: 35px;
-
+  margin: 12px;
   border-radius: 5px;
 }
