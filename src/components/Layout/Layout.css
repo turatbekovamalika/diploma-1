@@ -36,3 +36,6 @@
 .Product img {
   width: 200px;
 }
+.Layout .Logo-cart {
+  display: flex;
+}
