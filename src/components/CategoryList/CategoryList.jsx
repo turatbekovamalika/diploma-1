@@ -22,6 +22,7 @@ export default function CategoryList() {
 
   return (
     <div className="CategoryList">
+      <p>CATEGORY</p>
       <ul>{output}</ul>
     </div>
   );
