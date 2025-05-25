@@ -18,6 +18,7 @@ export const AppContext = createContext({
   products: [],
   cart: {},
   setCart: () => {},
+  user: null,
 });
 
 export default function App() {
