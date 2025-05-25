@@ -7,3 +7,13 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+.Home h1 {
+  color: #f6c7c2;
+  text-align: center;
+  padding-left: 100px;
+  position: absolute;
+}
+
+.Home img {
+  max-width: 959px;
+}
