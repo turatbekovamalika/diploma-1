@@ -5,58 +5,49 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
-import { categoryCollection, produtcCollection } from "./firebase";
+import { categoryCollection, productCollection } from "./firebase"; // ✅ правильный импорт
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+  cart: {},
+  setCart: () => {},
 });
 
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  //выполнить эту функциу один раз
+  const [cart, setCart] = useState({});
+
   useEffect(() => {
-    //получить категроии из списка категорий
+    // получить категории
     getDocs(categoryCollection).then((snapshot) => {
-      //категории будут храниться в snapshot.docs
-      //слздать массив для категорий
       const newCategories = [];
-      //заполнить массив данными из списка категорий
       snapshot.docs.forEach((doc) => {
-        // doc это категория
         const category = doc.data();
         category.id = doc.id;
-
         newCategories.push(category);
       });
-      //задать новый массив как состояние компонента
       setCategories(newCategories);
     });
 
-    //получить продукты из списка родукто
-    getDocs(produtcCollection).then((snapshot) => {
-      //категории будут храниться в snapshot.docs
-      //создать массив для продуктов
+    // ❗ исправлено здесь — правильное имя переменной productCollection
+    getDocs(productCollection).then((snapshot) => {
       const newProducts = [];
-      //заполнить массив данными из списка продуктов
       snapshot.docs.forEach((doc) => {
-        // doc это категория
         const product = doc.data();
         product.id = doc.id;
-
         newProducts.push(product);
       });
-      //задать новый массив как состояние компонента
       setProducts(newProducts);
     });
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
