@@ -5,6 +5,18 @@ import { Link } from "react-router-dom";
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
+  function onQtyChange(product, qty) {
+    setCart({
+      ...cart,
+      [product.id]: qty,
+    });
+  }
+
+  function onRemoveClick(product) {
+    const newCart = { ...cart };
+    delete newCart[product.id];
+    setCart(newCart);
+  }
 
   const productIds = Object.keys(cart);
   const output = products
@@ -12,9 +24,14 @@ export default function CartList() {
     .map((product) => (
       <div className="CartItem">
         <img src={product.picture} alt={product.name} />
-        <Link to={"/product/" + product.slug}>{product.name}</Link>
-        <span>{cart[product.id]} items</span>
-        <span>{product.price * cart[product.id]} $</span>
+        <input
+          type="number"
+          min={1}
+          onChange={(event) => onQtyChange(product, +event.target.value)}
+          value={cart[product.id]}
+        />
+        <span>{product.price * cart[product.id]} som</span>
+        <button onClick={() => onRemoveClick(product)}>Remove</button>
       </div>
     ));
 
