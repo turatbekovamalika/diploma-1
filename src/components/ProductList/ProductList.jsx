@@ -11,6 +11,7 @@ export default function ProductList({ category }) {
     .filter((product) => product.category === category.id)
     .map((product) => (
       <div className="Product" key={product.id}>
+        <Link className="About-product" to={"/product/" + product.path}></Link>
         <img src={product.picture} alt={product.name} />
 
         <div className="Tried">
