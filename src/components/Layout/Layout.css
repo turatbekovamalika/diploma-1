@@ -16,8 +16,9 @@
   background-color: #f5b7b1;
 }
 .Layout aside {
-  flex: 20% 0 0;
-  background-color: rgb(254, 239, 239);
+  flex: 100% 0 0;
+  background-color: rgb(255, 250, 250);
+  display: flex;
 }
 
 .Layout main {
