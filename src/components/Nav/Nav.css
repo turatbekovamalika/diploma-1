@@ -8,11 +8,17 @@
 .Nav ul li a {
   color: #7b241c;
   display: block;
-  padding: 25px;
+  padding: 20px;
   margin-left: 23px;
   font-weight: 700;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
   font-size: 17px;
+}
+.Nav ul li a:hover {
+  color: rgb(235, 230, 230);
+  background-color: #bd7d77;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px #bd7d77;
 }
