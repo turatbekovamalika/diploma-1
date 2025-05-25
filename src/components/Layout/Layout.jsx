@@ -13,8 +13,10 @@ export default function Layout(props) {
       <header>
         <Nav />
         <Logo />
-        <Auth />
-        <CartLink />
+        <div className="Logo-cart">
+          <Auth />
+          <CartLink />
+        </div>
       </header>
       <main>{props.children}</main>
       <aside>
