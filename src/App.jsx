@@ -21,7 +21,16 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    //восстанавливает содержимое корзинки из памяти брауизера
+    return JSON.parse(localStorage.getItem("cart"));
+  });
+
+  //выполнить эту функцию только когда содержимое корзинки меняетсяя
+  useEffect(() => {
+    //сохранить содержимое корзинки в памяти блаузера
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   useEffect(() => {
     // получить категории
