@@ -24,7 +24,7 @@ export default function OrderForm() {
       // очистить корзину
       setCart({});
       // отправить пользователя на главную страницу
-      navigate("/");
+      navigate("/thank-you");
     });
   }
 
