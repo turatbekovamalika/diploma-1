@@ -17,6 +17,11 @@
   border-radius: 5px;
   box-shadow: 0 0 10px 0px rgb(205, 105, 139);
 }
+.ProductList .Product img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px 1px rgb(138, 63, 88);
+}
 .ProductList .Product span {
   color: rgb(130, 56, 81);
   font-weight: 900;
