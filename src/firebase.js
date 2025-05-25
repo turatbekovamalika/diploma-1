@@ -20,3 +20,4 @@ const db = getFirestore(app);
 
 //получить список категорий (коллекция документов)
 export const categoryCollection = collection(db, "categories");
+export const produtcCollection = collection(db, "products");
