@@ -10,6 +10,7 @@ export default function CategoryList() {
     .sort((a, b) => a.weight - b.weight)
     .map((category) => (
       <li key={category.id}>
+        <img src={category.picture} alt={category.name} />
         <NavLink
           to={"/category/" + category.path}
           className={({ isActive }) => (isActive ? "active" : "")}
