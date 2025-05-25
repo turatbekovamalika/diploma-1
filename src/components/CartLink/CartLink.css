@@ -1,0 +1,17 @@
+.CartLink {
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+.CartLink a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.CartLink img {
+  width: 35px;
+}
+
+.Together {
+  display: flex;
+}
