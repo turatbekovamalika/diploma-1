@@ -46,3 +46,15 @@
   margin-right: 20px;
   font-size: 20px;
 }
+.InputButton button {
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(211, 144, 144);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.InputButton button:hover {
+  background-color: rgb(188, 125, 125);
+  color: rgb(245, 242, 242);
+}
