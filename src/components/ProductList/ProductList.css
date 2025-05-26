@@ -78,8 +78,19 @@
   top: 6px;
   font-family: monospace;
 }
-.Categoryyy {
-  color: gold;
+.Category .Categoryyy {
+  color: red;
   text-decoration: none;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: aqua;
+}
+
+.productlist2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 59px;
 }
