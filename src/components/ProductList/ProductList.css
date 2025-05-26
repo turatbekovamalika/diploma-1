@@ -4,6 +4,7 @@
   max-width: 253px;
 
   border-radius: 5px;
+  margin: 20px;
 }
 .ProductList {
   display: flex;
@@ -55,6 +56,7 @@
 
   margin-top: -10px;
   margin-left: 75px;
+  margin-bottom: 10px;
 }
 
 .Product .AddToCart button:hover {
