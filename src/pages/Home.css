@@ -138,7 +138,7 @@ button:hover {
   animation: Neon 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes Neon {
+@keyframes Neon {
   from {
     text-shadow: 0 0 10px #f5f0f0, 0 0 20px #e1dede, 0 0 30px #f0cbcb,
       0 0 40px #edcfcf, 0 0 50px #c18ada, 0 0 60px #cd86ef, 0 0 70px #e2a8fc;
