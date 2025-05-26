@@ -156,6 +156,10 @@ button:hover {
   line-height: 28px;
   font-size: 18px;
 }
+.Home .Col-6 p:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .Home .Trio-girl {
   background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Lips_lip-shine-lacquers_Desktop_SP_opt-1-min_1920x549.jpg?v=1675695474);
