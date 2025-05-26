@@ -173,3 +173,19 @@ button:hover {
   padding-top: 100px;
   line-height: 70px;
 }
+.Home .Liips {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.Home .Liips:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.Home .Lipcombo p {
+  margin-top: 70px;
+  line-height: 35px;
+}
