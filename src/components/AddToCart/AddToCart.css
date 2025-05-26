@@ -10,6 +10,7 @@
   box-shadow: 0 8px rgb(158, 100, 119);
   color: rgb(245, 235, 238);
   background-color: rgb(201, 129, 153);
+  transition: 0.5s;
 }
 
 .btn-add-cart:hover {
