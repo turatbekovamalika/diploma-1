@@ -24,13 +24,12 @@
 
 .network-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .network-icons .bi {
-  width: 40px;
-  height: 40px;
-  color: #fff;
+  width: 30px;
+  height: 30px;
 }
 
 .footer-list li:hover {
@@ -49,6 +48,7 @@
 .contacts {
   display: flex;
   justify-content: space-evenly;
+
   margin-top: 45px;
   color: #e869b5;
 }
@@ -58,14 +58,71 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-  .footer-column {
-    flex-basis: 50%;
+.privacy {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 65px;
+  color: #e869b5;
+}
+
+.privacy a {
+  color: white;
+  font-size: 15px;
+}
+
+.coty {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 808px) {
+  .contacts {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 45px;
+    color: #e869b5;
+  }
+  .contacts a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .privacy {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    color: #e869b5;
+  }
+
+  .privacy a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .coty {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 25px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .footer-column {
-    flex-basis: 100%;
+@media screen and (max-width: 540px) {
+  .privacy a {
+    display: none;
+  }
+  .contacts a {
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+  }
+  .coty {
+    color: white;
+    text-align: center;
+    font-size: 6px;
   }
 }
