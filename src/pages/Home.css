@@ -18,11 +18,12 @@
   border-radius: 10px;
   flex-wrap: wrap;
   background-color: rgb(227, 180, 180);
+  transition: 0.5s;
 }
 
 .Home-about:hover {
   transform: scale(1.1);
-  transition: 0.5s;
+
   box-shadow: 0 0 10px 1px rgb(138, 63, 88);
 }
 
@@ -92,11 +93,11 @@ button:hover {
   text-align: center;
   line-height: 28px;
   font-size: 18px;
+  transition: 0.5s;
 }
 
 .Home .Col-6 p:hover {
   transform: scale(1.1);
-  transition: 0.5s;
 }
 
 .Home .Lip-liner {
