@@ -10,7 +10,8 @@ export default function Auth() {
   // показывается гостю
   let output = (
     <span className="Sign-in">
-      <button onClick={logIn}>Sign in</button>
+      {" "}
+      <button onClick={logIn}>sign out</button>
     </span>
   );
   // показывается пользователю
