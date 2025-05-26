@@ -24,11 +24,11 @@
 .CartList input {
   border: 1px solid brown;
   border-radius: 5px;
-  padding: 5px 4px;
+  padding: 5px 8px;
   margin-top: 40px;
   margin-left: 10px;
   margin-right: 25px;
-  background-color: rgb(254, 249, 249);
+  background-color: transparent;
   margin-bottom: 40px;
   width: 10%;
 }
