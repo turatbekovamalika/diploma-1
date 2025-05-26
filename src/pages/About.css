@@ -1,17 +1,10 @@
 .About-me img {
-  margin: 50px;
+  margin: 60px;
   width: 350px;
+  margin-top: 95px;
 
-  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0 0 10px 1px rgb(213, 126, 155);
-}
-
-.About-me img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  box-shadow: 0 0 10px 1px rgb(138, 63, 88);
 }
 
 .About h1 {
