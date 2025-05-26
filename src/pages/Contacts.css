@@ -1,0 +1,23 @@
+.Eyes {
+  width: 100%;
+  border: 2px solid rgb(219, 101, 101);
+  border-radius: 3px;
+}
+
+.Contacts .Col-3 {
+  font-size: 20px;
+  line-height: 42px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(156, 73, 73);
+  text-align: center;
+}
+.Contacts .Col-3:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.Contacts h1 {
+  text-align: center;
+  color: rgb(155, 73, 73);
+}
