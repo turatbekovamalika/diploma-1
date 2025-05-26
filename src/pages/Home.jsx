@@ -1,5 +1,4 @@
 import CategoryList from "../components/CategoryList/CategoryList";
-import Lips from "../assets/Lips.webp";
 
 export default function Home() {
   return (
@@ -51,9 +50,7 @@ export default function Home() {
 
       <div className="Lipcombo">
         <div className="Row">
-          <div className="Col-6">
-            <img className="Liips" src={Lips} alt="photo-lips" />
-          </div>
+          <div className="Col-6"></div>
 
           <div className="Col-6">
             <p>
