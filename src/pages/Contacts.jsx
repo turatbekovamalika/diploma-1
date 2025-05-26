@@ -24,6 +24,15 @@ export default function Contacts() {
           +996 855 47 06 03
         </div>
       </div>
+      <p>
+        <strong> Our adress : </strong> 101 Cosmetics street, 5th house{" "}
+      </p>
+      <p>
+        <strong>Our email : </strong>cosmetics_store_by_ajarrra @gmail.com{" "}
+      </p>
+      <p>
+        we work from <strong> 8 a.m </strong>to <strong>10 p.m</strong>{" "}
+      </p>
     </div>
   );
 }
