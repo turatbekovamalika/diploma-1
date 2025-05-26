@@ -59,6 +59,7 @@
   margin-bottom: 10px;
   box-shadow: 0 8px rgb(158, 100, 119);
   border-radius: 18px;
+  transition: 0.5s;
 }
 
 .Product .AddToCart button:hover {
@@ -69,6 +70,7 @@
   box-shadow: 0 6px rgb(158, 100, 119);
   transform: translateY(4px);
   background-color: rgb(201, 129, 153);
+  transition: 0.5s;
 }
 
 .Product .Product-name {
