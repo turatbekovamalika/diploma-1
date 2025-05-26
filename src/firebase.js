@@ -1,6 +1,6 @@
-// Импорт необходимых функций из SDK
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { collection, getFirestore } from "firebase/firestore";
+import { collection, getFirestore, onSnapshot } from "firebase/firestore";
 import {
   GoogleAuthProvider,
   getAuth,
@@ -9,7 +9,7 @@ import {
   signOut,
 } from "firebase/auth";
 
-// Конфигурация вашего Firebase-приложения
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDi10lKyYvwkymqoUzs7UJoG3apV2n4e6E",
   authDomain: "diploma-5c1d2.firebaseapp.com",
@@ -19,16 +19,45 @@ const firebaseConfig = {
   appId: "1:575589830545:web:79ba07088c1622c4fdd430",
 };
 
-// Инициализация Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// Экспорт коллекций и auth
+//получить список категорий (коллекция документов)
 export const categoryCollection = collection(db, "categories");
 export const productCollection = collection(db, "products");
 export const orderCollection = collection(db, "orders");
+
 const provider = new GoogleAuthProvider();
 export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
+
+export const onCategoriesLoad = (callback) =>
+  onSnapshot(categoryCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+export const onProductsLoad = (callback) =>
+  onSnapshot(productCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
+export const onOrdersLoad = (callback) =>
+  onSnapshot(orderCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );
