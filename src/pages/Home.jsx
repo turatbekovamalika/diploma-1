@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="Trio-girl">
+      <div className="Lip-liner">
         <div className="Row">
           <div className="Col-5">
             <p>
