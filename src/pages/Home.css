@@ -121,11 +121,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.Home .Liips:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 .Home .Lipcombo p {
   margin-top: 70px;
   line-height: 35px;
@@ -138,6 +133,14 @@ button:hover {
   animation: Neon 1s ease-in-out infinite alternate;
 }
 
+.Home .Choose {
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+  color: brown;
+  padding: 55px;
+}
+
 @keyframes Neon {
   from {
     text-shadow: 0 0 10px #f5f0f0, 0 0 20px #e1dede, 0 0 30px #f0cbcb,
@@ -147,5 +150,13 @@ button:hover {
   to {
     text-shadow: 0 0 20px #f5f0f0, 0 0 30px #f54da1, 0 0 40px #f54da1,
       0 0 50px #f54da1, 0 0 60px #f54da1, 0 0 70px #f54da1, 0 0 80px #f54da1;
+  }
+}
+@media screen and (max-width: 598px) {
+  .Home .Kylie .Neon h1 {
+    color: rgb(156, 63, 63);
+    padding-left: 28px;
+    padding-top: 35px;
+    font-size: 9px;
   }
 }
