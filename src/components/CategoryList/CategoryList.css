@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   margin: 10px;
+  transition: 0.5s;
 }
 .CategoryList li {
   list-style-type: none;
@@ -16,7 +17,6 @@
 .CategoryList ul a:hover {
   color: #ec574a;
   transform: scale(1.1);
-  transition: 0.5s;
 }
 .CategoryList ul {
   display: flex;
@@ -41,7 +41,7 @@
 .CategoryList img:hover {
   transform: scale(0.9);
   transition: 0.5s;
-  box-shadow: 0 0 19px 0px rgb(128, 60, 82);
+  box-shadow: 0 0 19px 0px rgb(178, 84, 114);
 }
 .CategoryList .Category {
   display: flex;
