@@ -1,3 +1,4 @@
+import React from "react";
 import CategoryList from "../components/CategoryList/CategoryList";
 
 export default function Home() {
@@ -6,16 +7,17 @@ export default function Home() {
       <div className="Kylie">
         <h1>Welcome to my beauty world</h1>
         <div className="Home-about">
+          {" "}
           <p>
-            " True beauty lies in pure and good heart
-            <br /> but you can emphasize it thanks to my cosmetics."
+            "True beauty lies in pure and good <br />
+            heart but you can emphasize it <br />
+            thanks to my cosmetics."
           </p>
         </div>
       </div>
 
       <aside>
-        {" "}
-        <CategoryList />{" "}
+        <CategoryList />
       </aside>
 
       <div className="Kylie-lips">
@@ -29,8 +31,8 @@ export default function Home() {
 
         <div className="Col-6">
           <p>
-            so beauties choose high-quality, good and most importantly at the
-            best prices
+            So beauties, choose high-quality, good products and most importantly
+            — at the best prices!
           </p>
         </div>
       </div>
@@ -39,7 +41,7 @@ export default function Home() {
         <div className="Row">
           <div className="Col-5">
             <p>
-              choose <br /> the <br /> best <br /> !!!
+              Choose <br /> the <br /> best <br /> !!!
             </p>
           </div>
         </div>
