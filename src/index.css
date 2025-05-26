@@ -76,3 +76,7 @@ body {
   text-align: center;
   color: brown;
 }
+button:hover {
+  background-color: rgb(189, 158, 158);
+  color: aliceblue;
+}
