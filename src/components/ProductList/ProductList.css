@@ -44,4 +44,34 @@
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 20px;
+  margin-top: -10px;
+}
+
+.Product .AddToCart button {
+  color: rgb(130, 56, 81);
+  background-color: rgb(200, 179, 179);
+  display: flex;
+  align-items: center;
+
+  margin-top: -10px;
+  margin-left: 75px;
+}
+
+.Product .AddToCart button:hover {
+  background-color: rgb(157, 139, 139);
+  color: rgb(60, 18, 32);
+}
+
+.Product .Product-name {
+  font-size: 18px;
+}
+
+.Ppp {
+  position: relative;
+}
+
+.Product-name {
+  position: absolute;
+  left: 12px;
+  top: 6px;
 }
