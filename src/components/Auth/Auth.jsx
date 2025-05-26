@@ -16,8 +16,9 @@ export default function Auth() {
   if (user) {
     output = (
       <span className="Back">
-        <Link to="/orders">{user.displayName}</Link>
-        <button onClick={logOut}>back</button>
+        <Link className="Align" to="/orders">
+          {user.displayName}
+        </Link>
       </span>
     );
   }
