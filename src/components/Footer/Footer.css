@@ -1,7 +1,6 @@
 .footer {
   color: #fff;
 }
-
 .footer-column a {
   text-decoration: none;
   color: #fff;
@@ -21,17 +20,14 @@
   margin-bottom: 10px;
   font-size: 14px;
 }
-
 .network-icons {
   display: flex;
   justify-content: space-evenly;
 }
-
 .network-icons .bi {
   width: 30px;
   height: 30px;
 }
-
 .footer-list li:hover {
   cursor: pointer;
   color: #ff00bb;
@@ -45,6 +41,7 @@
   cursor: pointer;
   color: #ff00bb;
 }
+
 .contacts {
   display: flex;
   justify-content: space-evenly;
@@ -52,10 +49,15 @@
   margin-top: 45px;
   color: #e869b5;
 }
+
 .contacts a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+.contacts a:hover {
+  color: #e61d96;
 }
 
 .privacy {
@@ -68,6 +70,10 @@
 .privacy a {
   color: white;
   font-size: 15px;
+}
+
+.privacy a:hover {
+  color: #d85aa5;
 }
 
 .coty {
@@ -85,10 +91,14 @@
     margin-top: 45px;
     color: #e869b5;
   }
+
   .contacts a {
     color: white;
     text-decoration: none;
     font-size: 13px;
+  }
+  .contacts a:hover {
+    color: #e869b5;
   }
 
   .privacy {
@@ -115,11 +125,13 @@
   .privacy a {
     display: none;
   }
+
   .contacts a {
     color: white;
     text-decoration: none;
     font-size: 8px;
   }
+
   .coty {
     color: white;
     text-align: center;
