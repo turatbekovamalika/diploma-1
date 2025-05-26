@@ -101,6 +101,11 @@
   display: flex;
   list-style-type: none;
 }
+.productlist2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 59px;
+}
 @media screen and (max-width: 600px) {
   .Categoryyy span {
     color: rgb(177, 103, 103);
