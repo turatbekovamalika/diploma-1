@@ -1,0 +1,41 @@
+.About-me img {
+  margin: 50px;
+  width: 400px;
+  margin-left: 100px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px 1px rgb(213, 126, 155);
+}
+
+.About-me img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px 1px rgb(138, 63, 88);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(138, 63, 88);
+  margin-top: 45px;
+}
+
+.Col-6 p {
+  color: rgb(138, 63, 88);
+  font-size: 20px;
+  margin: 25px;
+  text-align: justify;
+  line-height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Photo-cosmetics {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP_banner_matte_3336x954_OPT-2_1920x549.jpg?v=1682453632);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 80px;
+  color: transparent;
+}
