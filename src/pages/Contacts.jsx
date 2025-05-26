@@ -8,28 +8,93 @@ export default function Contacts() {
       <div className="Row">
         <div className="Col-3">
           Our contacts: <br />
-          +996 555 27 09 04 <br />
-          +996 855 47 06 03 <br />
-          +996 645 75 07 22 <br />
-          +996 555 27 09 04
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel:+996 555 27 09 04"
+          >
+            +996 555 27 09 04
+          </a>{" "}
+          <br />
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel:+996 555 27 09 04"
+          >
+            +996 882 32 77 00
+          </a>{" "}
+          <br />
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel:+996 555 27 09 04"
+          >
+            +996 500 92 45 37
+          </a>
         </div>
         <div className="Col-6">
           <img className="Eyes" src={eyes} alt="photo-eyes" />
         </div>
         <div className="Col-3">
           Our contacts: <br />
-          +996 535 85 44 04 <br />
-          +996 975 36 84 54 <br />
-          +996 435 35 94 07 <br />
-          +996 855 47 06 03
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="tel:+996 555 27 09 04"
+          >
+            +996 500 55 44 37
+          </a>{" "}
+          <br />
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="+996 555 27 09 04"
+          >
+            +996 500 42 66 33
+          </a>{" "}
+          <br />
+          <a
+            className="Tel"
+            target="_blank"
+            rel="noreferrer"
+            href="+996 555 27 09 04"
+          >
+            +996 500 47 37 77
+          </a>
         </div>
       </div>
       <p>
-        <strong> Our adress : </strong> 101 Cosmetics street, 5th house{" "}
+        {" "}
+        <a
+          className="Tel"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.google.com/maps?q=48.858152, 2.294433
+
+
+
+"
+        >
+          <strong> Our adress : </strong> 101 Cosmetics street, 5th house
+        </a>
       </p>
+
       <p>
-        <strong>Our email : </strong>cosmetics_store_by_ajarrra @gmail.com{" "}
+        <a
+          className="Email"
+          target="_blank"
+          rel="noreferrer"
+          href="mailto:ajarka1334@gmail.com"
+        >
+          <strong>Our email: </strong> cosmetics_01_@gmail.com
+        </a>
       </p>
+
       <p>
         we work from <strong> 8 a.m </strong>to <strong>10 p.m</strong>{" "}
       </p>

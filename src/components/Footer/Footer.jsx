@@ -78,7 +78,7 @@ function Footer() {
             cookie policy
           </a>
         </div>
-        <p className="coty">© 2023 coty operations</p>
+        <p className="coty">© 2025 coty operations</p>
       </div>
     </footer>
   );
