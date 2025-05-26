@@ -39,3 +39,38 @@
   text-align: center;
   display: inline-block;
 }
+@media (max-width: 750px) {
+  .Productt img {
+    height: 170px;
+    width: 160px;
+    border: 2px solid rgb(176, 132, 132);
+    border-radius: 15px;
+  }
+
+  .Productt .Picture-des {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Productt .Price-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .Productt span {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Productt p {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .Productt span {
+    display: none;
+  }
+}
