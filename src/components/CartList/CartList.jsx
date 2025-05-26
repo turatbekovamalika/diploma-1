@@ -2,9 +2,12 @@ import "./CartList.css";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
+import "./CartList.css";
 
 export default function CartList() {
+  // получить продукты и содердижимое корзины
   const { products, cart, setCart } = useContext(AppContext);
+
   function onQtyChange(product, qty) {
     setCart({
       ...cart,
@@ -23,15 +26,24 @@ export default function CartList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem">
-        <img src={product.picture} alt={product.name} />
-        <input
-          type="number"
-          min={1}
-          onChange={(event) => onQtyChange(product, +event.target.value)}
-          value={cart[product.id]}
-        />
-        <span>{product.price * cart[product.id]} $</span>
-        <button onClick={() => onRemoveClick(product)}>Remove</button>
+        <p>
+          <Link to={"/product/" + product.slug}>{product.name}</Link>
+        </p>
+        <p className="Picture">
+          {" "}
+          <img src={product.picture} alt={product.name} />
+        </p>
+
+        <p className="InputButton">
+          <input
+            type="number"
+            min={1}
+            onChange={(event) => onQtyChange(product, +event.target.value)}
+            value={cart[product.id]}
+          />
+          <span>{product.price * cart[product.id]} $</span>
+          <button onClick={() => onRemoveClick(product)}>Remove</button>
+        </p>
       </div>
     ));
 
