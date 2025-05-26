@@ -10,11 +10,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(156, 73, 73);
   text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
+
 .Contacts .Col-3:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  font-weight: 700;
 }
 
 .Contacts h1 {
@@ -28,13 +30,30 @@
   font-size: 17px;
 }
 
+.Tel {
+  text-align: center;
+  color: brown;
+  font-size: 18px;
+  transition: 0.5;
+  text-decoration: none;
+}
+
+.Email {
+  text-align: center;
+  color: brown;
+  font-size: 18px;
+  transition: 0.5;
+  text-decoration: none;
+}
+
 @media (max-width: 750px) {
   .Eyes {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
   }
-  .Contacts .Col-3 {
+
+  .Tel .Col-3 {
     font-size: 15px;
     line-height: 18px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -48,25 +67,22 @@
   .Eyes {
     width: 100%;
   }
+
   .Contacts .Col-3 {
     font-size: 10px;
     line-height: 12px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(156, 73, 73);
     text-align: center;
-    transition: 0.5s;
-    cursor: pointer;
   }
-  .Contacts .Col-3:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-  }
+
   .Contacts h1 {
     text-align: center;
     color: rgb(155, 73, 73);
-    font-weight: 10;
+    font-size: 10px;
   }
-  .Contacts p {
+
+  .Tel {
     text-align: center;
     color: brown;
     font-size: 10px;
