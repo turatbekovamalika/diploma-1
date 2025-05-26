@@ -6,18 +6,24 @@ import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import Delivery from "./pages/Delivery";
+import Orders from "./pages/Orders";
 
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore";
 import {
   categoryCollection,
-  productCollection,
   onAuthChange,
+  orderCollection,
+  productCollection,
 } from "./firebase";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+  orders: [],
   cart: {},
   user: null,
 });
@@ -25,6 +31,7 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
   const [user, setUser] = useState(null);
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
@@ -55,21 +62,31 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    getDocs(orderCollection).then((snapshot) => {
+      const newOrders = snapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      setOrders(newOrders);
+    });
+  }, []);
+
+  useEffect(() => {
     const unsubscribe = onAuthChange(setUser);
     return () => unsubscribe();
   }, []);
 
   return (
-    <AppContext.Provider value={{ categories, products, cart, user, setCart }}>
+    <AppContext.Provider
+      value={{ categories, products, cart, setCart, user, orders }}
+    >
       <div className="App">
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
-
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
