@@ -101,3 +101,28 @@
   display: flex;
   list-style-type: none;
 }
+@media screen and (max-width: 600px) {
+  .Categoryyy span {
+    color: rgb(177, 103, 103);
+    list-style-type: none;
+    margin: 12px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Categoryyy span {
+    color: rgb(177, 103, 103);
+    list-style-type: none;
+    margin: 7px;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .productlist2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 29px;
+  }
+}
