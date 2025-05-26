@@ -10,6 +10,10 @@ export default function Home() {
           <br /> but you can emphasize it thanks to my cosmetics."
         </p>
       </div>
+      <aside>
+        {" "}
+        <CategoryList />{" "}
+      </aside>
     </div>
   );
 }
