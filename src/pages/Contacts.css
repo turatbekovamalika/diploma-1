@@ -54,11 +54,17 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(156, 73, 73);
     text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .Contacts .Col-3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
   }
   .Contacts h1 {
     text-align: center;
     color: rgb(155, 73, 73);
-    font-size: 10px;
+    font-weight: 10;
   }
   .Contacts p {
     text-align: center;
