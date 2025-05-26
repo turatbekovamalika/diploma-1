@@ -88,17 +88,16 @@
   top: 6px;
   font-family: monospace;
 }
-.Category .Categoryyy {
-  color: red;
-  text-decoration: none;
+.Categoryyy span {
+  color: rgb(177, 103, 103);
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 25px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-.productlist2 {
+.ProductList .Categoryyy {
+  text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
-  margin: 59px;
+  list-style-type: none;
 }
