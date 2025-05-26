@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className="Home">
       <div className="Kylie">
-        <h1>Welcome to my beauty world</h1>
+        <h1 className="Neon">Welcome to my beauty world</h1>
+
         <div className="Home-about">
           <p>
             "True beauty lies in pure and good <br />
@@ -21,6 +22,7 @@ export default function Home() {
       </aside>
 
       <div className="Kylie-lips">
+        {" "}
         <p>
           the best products <br /> only with us
         </p>
