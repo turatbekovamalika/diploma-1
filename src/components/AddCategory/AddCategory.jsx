@@ -6,28 +6,39 @@ import { AppContext } from "../../App";
 const AddCategory = () => {
   const { user } = useContext(AppContext);
   const [category, setCategory] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
     return null;
   }
+
   function onChangeCategory(event) {
     setCategory(event.target.value);
   }
+
   function onAddCategory() {
     const name = category.trim();
+
     if (name.length < 5) {
       alert(
         "Please provide a category name with minimum length of 5 characters."
       );
+
       return;
     }
+
+    setIsSubmitting(true);
 
     addDoc(categoryCollection, {
       name: name,
       path: name.replaceAll(" ", "-").toLocaleLowerCase(),
-    }).then(() => {
-      setCategory("");
-    });
+    })
+      .then(() => {
+        setCategory("");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   }
 
   return (
@@ -39,7 +50,9 @@ const AddCategory = () => {
         placeholder="Category name"
         onChange={onChangeCategory}
       />
-      <button onClick={onAddCategory}>+</button>
+      <button onClick={onAddCategory} disabled={isSubmitting}>
+        +
+      </button>
     </div>
   );
 };
