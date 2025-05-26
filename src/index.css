@@ -7,6 +7,65 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+.Row {
+  /* строка */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col"] {
+  padding: 0 10px;
+}
+
+.Col-1 {
+  flex: 8.3% 0 0;
+}
+
+.Col-2 {
+  flex: 16.6% 0 0;
+}
+
+.Col-3 {
+  flex: 25% 0 0;
+}
+
+.Col-4 {
+  flex: 33.3% 0 0;
+}
+
+.Col-5 {
+  flex: 41.6% 0 0;
+}
+
+.Col-6 {
+  flex: 50% 1 1;
+  flex-wrap: wrap;
+}
+
+.Col-7 {
+  flex: 58.3% 0 0;
+}
+
+.Col-8 {
+  flex: 66.6% 0 0;
+}
+
+.Col-9 {
+  flex: 75% 0 0;
+}
+
+.Col-10 {
+  flex: 83% 0 0;
+}
+
+.Col-11 {
+  flex: 91.6% 0 0;
+}
+
+.Col-12 {
+  flex: 100% 0 0;
+}
+
 .Home h1 {
   color: brown;
 
@@ -56,13 +115,22 @@ button:hover {
   display: flex;
   margin-top: 20px;
 }
-.Home .Kylie {
-  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Collections_gloss-_-glow_Desktop_SP_opt-1_1920x549.webp?v=1677078719);
+.Home .Kylie-lips {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Lips_lip-glosses_Desktop_SP_opt-2-min_1920x549.jpg?v=1675695605);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
   height: 400px;
-  margin-top: -22px;
+  margin-top: 50px;
+}
+
+.Home .Kylie-lips p {
+  color: rgb(207, 74, 74);
+  font-size: 25px;
+  text-align: end;
+  padding-top: 50px;
+  margin-right: 45px;
+  font-weight: 800;
 }
 
 .Orders h1 {
@@ -70,6 +138,6 @@ button:hover {
   text-align: center;
 }
 
-.ProductList {
-  color: red;
+.NotFound {
+  color: rgb(101, 43, 43);
 }
