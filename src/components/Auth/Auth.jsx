@@ -15,9 +15,9 @@ export default function Auth() {
   // показывается пользователю
   if (user) {
     output = (
-      <span>
+      <span className="Back">
         <Link to="/orders">{user.displayName}</Link>
-        <button onClick={logOut}>Sign out</button>
+        <button onClick={logOut}>back</button>
       </span>
     );
   }
