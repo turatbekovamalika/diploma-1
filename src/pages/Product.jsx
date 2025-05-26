@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useMatch } from "react-router-dom";
+import { NavLink, useMatch } from "react-router-dom";
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
 import AddToCart from "../components/AddToCart/AddToCart";
