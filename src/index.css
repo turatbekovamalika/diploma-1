@@ -34,14 +34,6 @@ body {
   box-shadow: 0 0 10px 1px rgb(138, 63, 88);
 }
 
-.Home {
-  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Collections_gloss-_-glow_Desktop_SP_opt-1_1920x549.webp?v=1677078719);
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  margin-top: -22px;
-}
-
 .About p {
   color: red;
 }
@@ -62,4 +54,22 @@ button:hover {
   flex: 100% 0 0;
   background-color: rgb(255, 250, 250);
   display: flex;
+  margin-top: 20px;
+}
+.Home .Kylie {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Collections_gloss-_-glow_Desktop_SP_opt-1_1920x549.webp?v=1677078719);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: -22px;
+}
+
+.Orders h1 {
+  color: rgb(101, 43, 43);
+  text-align: center;
+}
+
+.ProductList {
+  color: red;
 }
