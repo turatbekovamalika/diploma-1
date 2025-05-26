@@ -1,7 +1,7 @@
 .About-me img {
   margin: 50px;
-  width: 400px;
-  margin-left: 100px;
+  width: 350px;
+
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@
   font-size: 20px;
   margin: 25px;
   text-align: justify;
-  line-height: 45px;
+  line-height: 37px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -38,4 +38,14 @@
   height: 500px;
   margin-top: 80px;
   color: transparent;
+}
+
+@media (max-width: 750px) {
+  .About-me img {
+    margin: 10px;
+  }
+  .About-me img:hover {
+    transform: none;
+    transition: none;
+  }
 }
