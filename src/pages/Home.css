@@ -1,0 +1,151 @@
+.Home h1 {
+  color: rgb(156, 63, 63);
+  padding-left: 28px;
+  padding-top: 35px;
+  font-size: 29px;
+}
+
+.Home-about {
+  color: brown;
+  margin-top: 25px;
+  margin-left: 80px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  box-shadow: 0 0 10px 2px brown;
+  display: inline-block;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  background-color: rgb(227, 180, 180);
+}
+
+.Home-about:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px 1px rgb(138, 63, 88);
+}
+
+button {
+  color: rgb(130, 56, 81);
+  background-color: rgb(200, 179, 179);
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(106, 80, 80);
+}
+
+button:hover {
+  background-color: rgb(157, 139, 139);
+  color: rgb(60, 18, 32);
+}
+
+.Home aside {
+  flex: 100% 0 0;
+  background-color: rgb(255, 250, 250);
+  display: flex;
+  margin-top: 20px;
+}
+
+.Home .Kylie {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Collections_gloss-_-glow_Desktop_SP_opt-1_1920x549.webp?v=1677078719);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: -22px;
+}
+
+.Home .Kylie-lips {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Lips_lip-glosses_Desktop_SP_opt-2-min_1920x549.jpg?v=1675695605);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.Home .Kylie-lips p {
+  color: rgb(207, 74, 74);
+  font-size: 25px;
+  text-align: end;
+  padding-top: 50px;
+  margin-right: 45px;
+  font-weight: 800;
+}
+
+.Orders h1 {
+  color: rgb(101, 43, 43);
+  text-align: center;
+}
+
+.Cart h1 {
+  display: none;
+}
+
+.NotFound {
+  color: rgb(101, 43, 43);
+}
+
+.Home .Col-6 p {
+  color: brown;
+  padding: 50px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.Home .Col-6 p:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.Home .Lip-liner {
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Lips_lip-shine-lacquers_Desktop_SP_opt-1-min_1920x549.jpg?v=1675695474);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 20px;
+  color: rgb(222, 83, 83);
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 70px;
+}
+
+.Home .Liips {
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.Home .Liips:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.Home .Lipcombo p {
+  margin-top: 70px;
+  line-height: 35px;
+}
+
+.Home .Neon {
+  color: #f8e8e8;
+  -webkit-animation: Neon 1s ease-in-out infinite alternate;
+  -moz-animation: Neon 1s ease-in-out infinite alternate;
+  animation: Neon 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes Neon {
+  from {
+    text-shadow: 0 0 10px #f5f0f0, 0 0 20px #e1dede, 0 0 30px #f0cbcb,
+      0 0 40px #edcfcf, 0 0 50px #c18ada, 0 0 60px #cd86ef, 0 0 70px #e2a8fc;
+  }
+
+  to {
+    text-shadow: 0 0 20px #f5f0f0, 0 0 30px #f54da1, 0 0 40px #f54da1,
+      0 0 50px #f54da1, 0 0 60px #f54da1, 0 0 70px #f54da1, 0 0 80px #f54da1;
+  }
+}
