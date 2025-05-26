@@ -1,5 +1,5 @@
-import React from "react";
 import CategoryList from "../components/CategoryList/CategoryList";
+import Lips from "../assets/Lips.webp";
 
 export default function Home() {
   return (
@@ -7,7 +7,6 @@ export default function Home() {
       <div className="Kylie">
         <h1>Welcome to my beauty world</h1>
         <div className="Home-about">
-          {" "}
           <p>
             "True beauty lies in pure and good <br />
             heart but you can emphasize it <br />
@@ -17,10 +16,17 @@ export default function Home() {
       </div>
 
       <aside>
-        <CategoryList />
+        {" "}
+        <CategoryList />{" "}
       </aside>
 
       <div className="Kylie-lips">
+        <p>
+          the best products <br /> only with us
+        </p>
+      </div>
+
+      <div className="Row">
         <div className="Col-6">
           <p>
             Thanks to our cosmetics, you will always look amazing in the eyes of
@@ -31,17 +37,29 @@ export default function Home() {
 
         <div className="Col-6">
           <p>
-            So beauties, choose high-quality, good products and most importantly
-            — at the best prices!
+            so beauties choose high-quality, good and most importantly at the
+            best prices
           </p>
         </div>
       </div>
 
       <div className="Lip-liner">
+        <div className="Row"></div>
+      </div>
+
+      <div className="Lipcombo">
         <div className="Row">
-          <div className="Col-5">
+          <div className="Col-6">
+            <img className="Liips" src={Lips} alt="photo-lips" />
+          </div>
+
+          <div className="Col-6">
             <p>
-              Choose <br /> the <br /> best <br /> !!!
+              my crème lipstick is a creamy, comfortable formula that delivers a
+              color-rich, satin sheen finish. featuring a non-sticky and
+              lightweight texture, it effortlessly glides on without feathering
+              or settling into lip lines. this formula hydrates and moisturizes
+              for 8 hours, leaving lips instantly soft.
             </p>
           </div>
         </div>
