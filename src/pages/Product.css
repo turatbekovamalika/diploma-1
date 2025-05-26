@@ -1,0 +1,41 @@
+.Productt {
+  color: rgb(168, 77, 77);
+}
+
+.Productt h1 {
+  text-align: center;
+}
+
+.Productt img {
+  height: 270px;
+  width: 260px;
+  border: 2px solid rgb(176, 132, 132);
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.Productt .Picture-des {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.Productt .Price-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.Productt span {
+  padding-left: 120px;
+  font-size: 21px;
+  margin: 25px;
+}
+
+.Productt p {
+  width: 60%;
+  margin-top: 40px;
+  text-align: center;
+  display: inline-block;
+}
