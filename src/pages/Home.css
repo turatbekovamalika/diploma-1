@@ -152,11 +152,13 @@ button:hover {
       0 0 50px #f54da1, 0 0 60px #f54da1, 0 0 70px #f54da1, 0 0 80px #f54da1;
   }
 }
-@media screen and (max-width: 598px) {
-  .Home .Kylie .Neon h1 {
-    color: rgb(156, 63, 63);
-    padding-left: 28px;
+@media screen and (max-width: 700px) {
+  .Home h1 {
+    padding-left: 58px;
     padding-top: 35px;
-    font-size: 9px;
+    font-size: 21px;
+  }
+  .Home-about {
+    display: none;
   }
 }
