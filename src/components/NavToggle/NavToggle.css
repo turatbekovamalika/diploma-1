@@ -7,10 +7,15 @@
 }
 .NavToggle .line {
   width: 25px;
-  height: 2px;
+  height: 3px;
   margin: 5px;
-  background-color: #0b1c2c;
+  background-color: #b91f61;
 }
+
+.NavToggle:hover {
+  background-color: #e5a2a2;
+}
+
 @media (max-width: 950px) {
   .NavToggle {
     display: inline-block;
