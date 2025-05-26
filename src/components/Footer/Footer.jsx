@@ -1,18 +1,5 @@
-import { NavLink } from "react-router-dom";
-import { useContext } from "react";
-import { AppContext } from "../../App";
 import "./Footer.css";
-
 function Footer() {
-  const { categories } = useContext(AppContext);
-
-  const output = categories.map((category) => (
-    <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
-        <span>{category.name}</span>
-      </NavLink>
-    </li>
-  ));
   return (
     <footer className="footer">
       <div className="footer-column">
@@ -56,7 +43,6 @@ function Footer() {
           <a href="#">shipping</a>
           <a href="#">order tracking</a>
         </div>
-
         <div className="privacy">
           <a href="#">privacy policy</a>
           <a href="#">terms</a>

@@ -10,19 +10,15 @@ const AddCategory = () => {
   if (!user || !user.isAdmin) {
     return null;
   }
-
   function onChangeCategory(event) {
     setCategory(event.target.value);
   }
-
   function onAddCategory() {
     const name = category.trim();
-
     if (name.length < 5) {
       alert(
         "Please provide a category name with minimum length of 5 characters."
       );
-
       return;
     }
 

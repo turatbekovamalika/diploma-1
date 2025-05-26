@@ -2,7 +2,6 @@
   padding: 2px 7px;
   font-size: 15px;
   font-weight: 500;
-
   margin-top: 5px;
   margin-left: 21px;
   border: none;
@@ -37,6 +36,7 @@
   color: rgb(129, 34, 34);
   font-size: 15px;
 }
+
 .Link .Align {
   text-align: center;
 }

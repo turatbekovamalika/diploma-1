@@ -4,7 +4,6 @@ import { AppContext } from "../../App";
 
 export default function AddToCart({ product }) {
   const { cart, setCart } = useContext(AppContext);
-
   const currentCount = cart[product.id] ? cart[product.id] : 0;
   function onAddToCart() {
     setCart({
