@@ -38,7 +38,7 @@
   font-weight: 600;
   color: rgb(130, 56, 81);
 }
-.ProductList .Tried {
+.ProductList .Color-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,12 +66,13 @@
   font-size: 18px;
 }
 
-.Ppp {
+.Name-img {
   position: relative;
 }
 
 .Product-name {
   position: absolute;
-  left: 12px;
+  left: 10px;
   top: 6px;
+  font-family: monospace;
 }
