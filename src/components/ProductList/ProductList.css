@@ -21,7 +21,7 @@
 }
 .ProductList .Product img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px 1px rgb(56, 59, 253);
+  box-shadow: 0 0 10px 1px rgb(138, 63, 88);
 }
 .ProductList .Product span {
   color: rgb(130, 56, 81);
