@@ -11,6 +11,8 @@
   text-align: center;
   color: rgb(138, 63, 88);
   margin-top: 45px;
+  text-shadow: 0 0 10px #f2c9c9, 0 0 20px #faecec, 0 0 30px #f4bdbd,
+    0 0 40px #edcfcf, 0 0 50px #ffb6e2;
 }
 
 .About .Col-6 p {
