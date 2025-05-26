@@ -1,6 +1,5 @@
 .Layout {
   max-width: 1000px;
-
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -10,19 +9,15 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: #f5cfcc;
+  background-color: #f4cfcd;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-
-  background-color: #f5b7b1;
 }
-
 .Layout main {
   flex: 100% 1 1;
   background-color: rgb(255, 250, 250);
 }
-
 .Layout footer {
   flex-basis: 100%;
   flex-grow: 0;
@@ -30,18 +25,26 @@
   background-color: #f5cfcc;
   padding: 100px;
 }
+
 .Product img {
   width: 200px;
 }
+
 .Layout .Logo-cart {
-  display: flex;
-  justify-content: space-between;
+  padding: 10px;
+  margin-left: 25px;
 }
+
+.Layout .Logo-cart .CartLink {
+  margin-left: 10px;
+}
+
 .Layout aside {
   flex: 100% 0 0;
   background-color: rgb(255, 250, 250);
   display: flex;
 }
+
 @media (max-width: 950px) {
   .Layout header > .Nav {
     display: none;
