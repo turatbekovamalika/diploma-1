@@ -1,4 +1,5 @@
 import CategoryList from "../components/CategoryList/CategoryList";
+import ProductList from "../components/ProductList/ProductList";
 
 export default function Home() {
   return (
