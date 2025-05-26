@@ -23,5 +23,13 @@
 }
 
 .OrderForm button {
-  color: aqua;
+  color: brown;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  padding: 5px 30px;
+}
+
+.OrderForm img {
+  border-radius: 50px;
+  border: 1px solid brown;
 }
