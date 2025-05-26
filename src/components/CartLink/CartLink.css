@@ -16,3 +16,6 @@
   display: flex;
   margin-left: 20px;
 }
+.CartLink {
+  color: green;
+}
