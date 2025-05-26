@@ -3,6 +3,7 @@ import { useMatch } from "react-router-dom";
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
 import AddToCart from "../components/AddToCart/AddToCart";
+import "./Product.css";
 
 export default function Product() {
   const { params } = useMatch("/product/:path");
@@ -15,11 +16,22 @@ export default function Product() {
   }
 
   return (
-    <div className="Product">
+    <div className="Productt">
       <h1>{product.name}</h1>
-      <img src={product.picture} alt={product.name} />
-      <span>{product.price} som</span>
-      <AddToCart product={product} />
+      <div className="Picture-des">
+        <img src={product.picture} alt={product.name} />
+        <div className="Des-price-button">
+          <p>{product.description}</p>
+
+          <div className="Price-button">
+            <strong>
+              {" "}
+              <span>{product.price} $</span>
+            </strong>
+            <AddToCart product={product} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
