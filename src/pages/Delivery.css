@@ -56,3 +56,41 @@
   text-shadow: 0 0 10px #e98f8f, 0 0 20px #eec9c9, 0 0 30px #f4bdbd,
     0 0 40px #edcfcf, 0 0 50px #c18ada, 0 0 60px #f1bfad, 0 0 70px #e2a8fc;
 }
+@media screen and (max-width: 680px) {
+  .Delivery h1 {
+    text-align: center;
+    color: rgb(155, 73, 73);
+    font-size: 17px;
+  }
+
+  .Delivery .Col-4 p {
+    margin: 5px;
+    color: rgb(155, 73, 73);
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .AboutDelivery {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: 35px;
+    color: rgb(155, 73, 73);
+    line-height: 25px;
+  }
+
+  .HaveNiceDay {
+    text-align: center;
+    margin-top: 25px;
+    margin-left: -50px;
+    font-size: 10px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #e98f8f, 0 0 20px #eec9c9, 0 0 30px #f4bdbd,
+      0 0 40px #edcfcf, 0 0 50px #c18ada, 0 0 60px #f1bfad, 0 0 70px #e2a8fc;
+  }
+  .Delivery .Col-4 {
+    border: 1px solid brown;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
