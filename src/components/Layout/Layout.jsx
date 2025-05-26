@@ -1,14 +1,12 @@
 import { useState } from "react";
-
 import Auth from "../Auth/Auth";
-
 import CartLink from "../CartLink/CartLink";
-import CategoryList from "../CategoryList/CategoryList";
-import Logo from "../Logo/Logo";
+import Drawer from "../Drawer/Drawer";
 
 import Nav from "../Nav/Nav";
 import NavToggle from "../NavToggle/NavToggle";
 import "./Layout.css";
+import Logo from "../Logo/Logo";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
