@@ -17,18 +17,32 @@ export default function Home() {
         {" "}
         <CategoryList />{" "}
       </aside>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-        consequatur ratione, mollitia eveniet cupiditate rem vero provident sed
-        perferendis nulla sint nostrum recusandae voluptas! Labore ducimus
-        doloribus sint repudiandae ab.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus
-        ea voluptatibus, itaque consequuntur est officiis modi dicta, eum
-        quibusdam reiciendis, tempora tenetur inventore alias facere? Beatae
-        quisquam ipsa eos?
-      </p>
+
+      <div className="Kylie-lips">
+        <p>
+          the best products <br /> only with us
+        </p>
+      </div>
+
+      <div className="Row">
+        <div className="Col-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            voluptate soluta sint non magni deleniti, aliquam saepe nam voluptas
+            alias id, ipsam explicabo optio ipsum praesentium error nisi nemo
+            neque.
+          </p>
+        </div>
+
+        <div className="Col-6">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            mollitia reprehenderit sit minima omnis odit soluta, facilis
+            asperiores voluptatum nostrum, harum architecto fugiat provident
+            dignissimos enim magni doloribus officia aliquid!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
