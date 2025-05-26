@@ -40,15 +40,14 @@ export default function OrderForm() {
     <div className="OrderForm">
       <form onSubmit={onSubmit}>
         <h3>Create an order</h3>
-
         <label>
-          Name: <input type="text" name="name" required />
+          <span> Name: </span> <input type="text" name="name" required />
         </label>
         <label>
-          Phone: <input type="telephone" name="phone" required />
+          <span> Phone:</span> <input type="telephone" name="phone" required />
         </label>
         <label>
-          Address: <input type="text" name="address" required />
+          <span> Address:</span> <input type="text" name="address" required />
         </label>
         <button>Submit</button>
       </form>
