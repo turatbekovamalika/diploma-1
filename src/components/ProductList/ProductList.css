@@ -49,23 +49,33 @@
 }
 
 .Product .AddToCart button {
-  color: rgb(130, 56, 81);
-  background-color: rgb(200, 179, 179);
+  color: rgb(245, 235, 238);
+  background-color: rgb(201, 129, 153);
   display: flex;
   align-items: center;
 
   margin-top: -10px;
   margin-left: 75px;
   margin-bottom: 10px;
+  box-shadow: 0 8px rgb(158, 100, 119);
+  border-radius: 18px;
 }
 
 .Product .AddToCart button:hover {
-  background-color: rgb(157, 139, 139);
-  color: rgb(60, 18, 32);
+  background-color: rgb(223, 169, 187);
+  box-shadow: 0 8px rgb(186, 136, 153);
+}
+.Product .AddToCart button:active {
+  box-shadow: 0 6px rgb(158, 100, 119);
+  transform: translateY(4px);
+  background-color: rgb(201, 129, 153);
 }
 
 .Product .Product-name {
   font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 0, 166);
 }
 
 .Name-img {

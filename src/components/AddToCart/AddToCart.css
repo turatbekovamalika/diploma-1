@@ -1,0 +1,24 @@
+.AddToCart .btn-add-cart {
+  display: inline-block;
+  padding: 6px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px rgb(158, 100, 119);
+  color: rgb(245, 235, 238);
+  background-color: rgb(201, 129, 153);
+}
+
+.btn-add-cart:hover {
+  background-color: rgb(223, 169, 187);
+  box-shadow: 0 8px rgb(186, 136, 153);
+}
+
+.btn-add-cart:active {
+  background-color: rgb(201, 129, 153);
+  box-shadow: 0 6px rgb(158, 100, 119);
+  transform: translateY(4px);
+}
