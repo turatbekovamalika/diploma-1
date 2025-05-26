@@ -19,28 +19,29 @@ export default function Home() {
       </aside>
 
       <div className="Kylie-lips">
-        <p>
-          the best products <br /> only with us
-        </p>
-      </div>
-
-      <div className="Row">
         <div className="Col-6">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            voluptate soluta sint non magni deleniti, aliquam saepe nam voluptas
-            alias id, ipsam explicabo optio ipsum praesentium error nisi nemo
-            neque.
+            Thanks to our cosmetics, you will always look amazing in the eyes of
+            those around you, and most importantly, you will start to love
+            yourself even more.
           </p>
         </div>
 
         <div className="Col-6">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            mollitia reprehenderit sit minima omnis odit soluta, facilis
-            asperiores voluptatum nostrum, harum architecto fugiat provident
-            dignissimos enim magni doloribus officia aliquid!
+            so beauties choose high-quality, good and most importantly at the
+            best prices
           </p>
+        </div>
+      </div>
+
+      <div className="Trio-girl">
+        <div className="Row">
+          <div className="Col-5">
+            <p>
+              choose <br /> the <br /> best <br /> !!!
+            </p>
+          </div>
         </div>
       </div>
     </div>
