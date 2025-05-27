@@ -155,11 +155,13 @@ button:hover {
 }
 @media screen and (max-width: 700px) {
   .Home h1 {
-    padding-left: 58px;
-    padding-top: 35px;
-    font-size: 20px;
+    font-size: 32px;
+    text-align: center;
   }
   .Home-about {
     display: none;
+  }
+  .Home .Col-6 p:hover {
+    transform: none;
   }
 }
