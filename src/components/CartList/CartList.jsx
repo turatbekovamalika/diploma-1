@@ -33,16 +33,20 @@ export default function CartList() {
         <p>
           <Link to={"/product/" + product.slug}>{product.name}</Link>
         </p>
-        <p className="InputButton">
-          <input
-            type="number"
-            min={1}
-            onChange={(event) => onQtyChange(product, +event.target.value)}
-            value={cart[product.id]}
-          />
-          <span>{product.price * cart[product.id]} $</span>
-          <button onClick={() => onRemoveClick(product)}>Remove</button>
-        </p>
+
+        <input
+          type="number"
+          min={1}
+          onChange={(event) => onQtyChange(product, +event.target.value)}
+          value={cart[product.id]}
+        />
+        <span>{product.price * cart[product.id]} $</span>
+
+        <img
+          className="Delete_icon"
+          onClick={() => onRemoveClick(product)}
+          src="src/assets/musorkaa.png"
+        />
       </div>
     ));
 
