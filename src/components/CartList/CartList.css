@@ -18,6 +18,10 @@
 .CartList .CartItem img {
   width: 150px;
 }
+.Delete_icon {
+  max-width: 70px;
+  margin-top: 0px;
+}
 
 .CartList input {
   border: 1px solid rgb(158, 104, 104);
