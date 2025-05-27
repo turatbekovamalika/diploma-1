@@ -50,3 +50,12 @@
     display: none;
   }
 }
+@media screen and (max-width: 658px) {
+  .Layout footer {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #ecc6c4;
+    padding: 20px;
+  }
+}
