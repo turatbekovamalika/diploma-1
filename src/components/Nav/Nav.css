@@ -36,4 +36,59 @@
   .Nav ul {
     flex-direction: column;
   }
+  .Nav li {
+    display: inline-block;
+    position: relative;
+    color: blue;
+    cursor: pointer;
+    transition: 0.4s all ease;
+  }
+  .Nav li:hover {
+    color: violet;
+    transition: 0.4 all ease;
+  }
+  .Nav li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: brown;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+  }
+  .Nav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .Nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .Nav ul li a {
+    color: brown;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .Nav ul li a:focus {
+    color: rgb(215, 126, 126);
+    cursor: pointer;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  @media (max-width: 650px) {
+    .Nav ul {
+      flex-direction: column;
+    }
+  }
 }
