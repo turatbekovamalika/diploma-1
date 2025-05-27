@@ -27,6 +27,7 @@
 .network-icons .bi {
   width: 30px;
   height: 30px;
+  transition: 0.5s;
 }
 .footer-list li:hover {
   cursor: pointer;
@@ -54,10 +55,12 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
+  transition: 0.5s;
 }
 
 .contacts a:hover {
   color: #e61d96;
+  transition: 0.5s;
 }
 
 .privacy {
@@ -70,10 +73,12 @@
 .privacy a {
   color: white;
   font-size: 15px;
+  transition: 0.5s;
 }
 
 .privacy a:hover {
   color: #d85aa5;
+  transition: 0.5s;
 }
 
 .coty {
