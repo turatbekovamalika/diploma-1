@@ -75,11 +75,15 @@
     color: rgb(156, 73, 73);
     text-align: center;
   }
-
+  a:hover {
+    color: rgb(251, 25, 25);
+    transition: 0.5s;
+  }
   .Contacts h1 {
     text-align: center;
     color: rgb(155, 73, 73);
     font-size: 10px;
+    flex: 100% 0 0;
   }
 
   .Tel {
