@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartList.css";
+
 import musorkaa from "../../assets/musorkaa.png";
 
 export default function CartList() {
@@ -24,31 +25,40 @@ export default function CartList() {
 
   const productIds = Object.keys(cart);
   const output = products
+
     .filter((product) => productIds.includes(product.id))
+
     .map((product) => (
-      <div className="CartItem">
-        <p className="Picture">
-          {" "}
-          <img src={product.picture} alt={product.name} />
-        </p>
-        <p className="ProductSlug">
-          <Link to={`/products/` + product.slug}> {product.name}</Link>
-        </p>
+      <div className="Container">
+        <div className="CartItem">
+          <p className="Picture">
+            {" "}
+            <img src={product.picture} alt={product.name} />
+          </p>
 
-        <input
-          type="number"
-          min={1}
-          onChange={(event) => onQtyChange(product, +event.target.value)}
-          value={cart[product.id]}
-        />
-        <span>{product.price * cart[product.id]} $</span>
+          <Link className="ProductSlug" to={`/products/` + product.slug}>
+            {" "}
+            {product.name}
+          </Link>
 
-        <img
-          className="Delete_icon"
-          onClick={() => onRemoveClick(product)}
-          src={musorkaa}
-          alt="remove"
-        />
+          <input
+            type="number"
+            min={1}
+            onChange={(event) => onQtyChange(product, +event.target.value)}
+            value={cart[product.id]}
+          />
+
+          <span className="Product_price">
+            {product.price * cart[product.id]} $
+          </span>
+
+          <img
+            className="Delete_icon"
+            onClick={() => onRemoveClick(product)}
+            src={musorkaa}
+            alt="remove"
+          />
+        </div>
       </div>
     ));
 
