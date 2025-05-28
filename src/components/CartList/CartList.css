@@ -14,11 +14,13 @@
   flex-wrap: wrap;
   box-shadow: 10px 5px 5px 5px rgb(240, 227, 227);
   background-color: white;
+  transition: 0.5s;
 }
 
 .CartList .CartItem img {
   width: 150px;
 }
+
 .Delete_icon {
   max-width: 70px;
   margin-top: 0px;
@@ -34,7 +36,7 @@
   margin-right: 25px;
   background-color: transparent;
   margin-bottom: 40px;
-  width: 11%;
+  width: 20%;
 }
 
 .CartList a {
@@ -43,6 +45,7 @@
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+  width: 20%;
 }
 
 .CartList span {
@@ -51,10 +54,13 @@
   font-weight: 700;
   margin-right: 20px;
   font-size: 20px;
+  width: 5%;
 }
+
 .ProductSlug {
-  max-width: 80px;
+  max-width: 20px;
 }
+
 .InputButton button {
   margin-left: 20px;
   color: white;
@@ -67,6 +73,17 @@
   background-color: rgb(188, 125, 125);
   color: rgb(245, 242, 242);
 }
+
 .CartItem input {
-  max-width: 35px;
+  max-width: 50px;
+  outline: none;
+  cursor: pointer;
+  color: brown;
+  font-size: 14px;
+  max-width: 5%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
 }
