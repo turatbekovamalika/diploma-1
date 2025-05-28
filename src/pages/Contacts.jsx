@@ -13,9 +13,18 @@ export default function Contacts() {
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="tel:+996 555 27 09 04"
+              href="tel:+996503111381"
             >
-              +996 555 27 09 04
+              +996 503111381
+            </a>{" "}
+            <br />
+            <a
+              className="Tel"
+              target="_blank"
+              rel="noreferrer"
+              href="tel:+700540500"
+            >
+              +996 700540500
             </a>{" "}
             <br />
             <a
@@ -24,16 +33,7 @@ export default function Contacts() {
               rel="noreferrer"
               href="tel:+996 555 27 09 04"
             >
-              +996 882 32 77 00
-            </a>{" "}
-            <br />
-            <a
-              className="Tel"
-              target="_blank"
-              rel="noreferrer"
-              href="tel:+996 555 27 09 04"
-            >
-              +996 500 92 45 37
+              +996 707704835
             </a>
           </div>
           <div className="Col-6">
@@ -45,27 +45,27 @@ export default function Contacts() {
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="tel:+996 555 27 09 04"
+              href="tel:+996 503111381"
             >
-              +996 500 55 44 37
+              +996 503111381
             </a>{" "}
             <br />
             <a
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="+996 555 27 09 04"
+              href="+996 503111381"
             >
-              +996 500 42 66 33
+              +996 707704619
             </a>{" "}
             <br />
             <a
               className="Tel"
               target="_blank"
               rel="noreferrer"
-              href="+996 555 27 09 04"
+              href="+996 503111381"
             >
-              +996 500 47 37 77
+              +996050311381
             </a>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function Contacts() {
             className="Email"
             target="_blank"
             rel="noreferrer"
-            href="mailto:ajarka1334@gmail.com"
+            href="m18049687@gmail.com"
           >
             cosmetics_01_@gmail.com
           </a>
