@@ -103,10 +103,3 @@ body {
   background-color: transparent;
   transform: rotate(360deg);
 }
-.Cart {
-  height: 500px;
-  text-align: center;
-  color: brown;
-  font-size: 25px;
-  padding-top: 50px;
-}
