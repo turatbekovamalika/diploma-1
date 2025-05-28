@@ -4,15 +4,20 @@
 
 .Productt h1 {
   text-align: center;
+  font-size: 27px;
+  padding-top: 50px;
+  margin-bottom: -40px;
+  padding-left: 120px;
 }
 
 .Productt img {
-  height: 270px;
-  width: 260px;
+  height: 289px;
+  width: 265px;
   border: 2px solid rgb(176, 132, 132);
   border-radius: 15px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: -50px;
 }
 
 .Productt .Picture-des {
@@ -70,10 +75,11 @@
   .Productt p {
     display: none;
   }
-}
-
-@media (max-width: 550px) {
-  .Productt span {
-    display: none;
+  .Productt h1 {
+    text-align: center;
+    font-size: 27px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 120px;
   }
 }
