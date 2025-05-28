@@ -8,7 +8,7 @@
 .Home-about {
   color: brown;
   margin-top: 25px;
-  margin-left: 80px;
+  margin-left: 145px;
   padding-top: 5px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -19,6 +19,17 @@
   flex-wrap: wrap;
   background-color: rgb(227, 180, 180);
   transition: 0.5s;
+  font-size: 20px;
+}
+
+.Home .Neon {
+  color: #f8e8e8;
+  -webkit-animation: Neon 1s ease-in-out infinite alternate;
+  -moz-animation: Neon 1s ease-in-out infinite alternate;
+  animation: Neon 1s ease-in-out infinite alternate;
+  padding-left: 150px;
+  padding-top: 80px;
+  font-size: 35px;
 }
 
 .Home-about:hover {
@@ -52,8 +63,8 @@ button:hover {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  height: 400px;
-  margin-top: -22px;
+  height: 500px;
+  margin-top: -23px;
 }
 
 .Home .Kylie-lips {
@@ -127,13 +138,6 @@ button:hover {
   line-height: 35px;
 }
 
-.Home .Neon {
-  color: #f8e8e8;
-  -webkit-animation: Neon 1s ease-in-out infinite alternate;
-  -moz-animation: Neon 1s ease-in-out infinite alternate;
-  animation: Neon 1s ease-in-out infinite alternate;
-}
-
 .Home .Choose {
   text-align: center;
   font-size: 30px;
@@ -153,15 +157,50 @@ button:hover {
       0 0 50px #f54da1, 0 0 60px #f54da1, 0 0 70px #f54da1, 0 0 80px #f54da1;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .Home .Kylie {
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/4598/4498/collections/PLP-Imagery_Cosmetics_Collections_gloss-_-glow_Desktop_SP_opt-1_1920x549.webp?v=1677078719);
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: -25px;
+  }
+
+  .Home-about {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .Home h1 {
     font-size: 32px;
     text-align: center;
   }
+
   .Home-about {
     display: none;
   }
+
   .Home .Col-6 p:hover {
     transform: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Home .Neon {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .Home .Col-6 {
+    color: rgb(56, 42, 165);
+    padding: 0px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 18px;
+    transition: 0.5s;
+    flex: 100% 0 0;
   }
 }
