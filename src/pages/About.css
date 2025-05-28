@@ -2,7 +2,6 @@
   margin: 60px;
   width: 350px;
   margin-top: 95px;
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -39,6 +38,7 @@
   .About-me img {
     margin: 10px;
   }
+
   .About-me img:hover {
     transform: none;
     transition: none;

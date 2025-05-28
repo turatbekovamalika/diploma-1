@@ -1,3 +1,17 @@
+.Delivery h1 {
+  text-align: center;
+  color: rgb(155, 73, 73);
+  margin-bottom: 45px;
+  margin-top: 30px;
+}
+
+.Delivery .Col-4 {
+  border: 1px solid brown;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .Delivery .Col-4 p {
   margin: 25px;
   color: rgb(155, 73, 73);

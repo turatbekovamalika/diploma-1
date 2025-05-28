@@ -12,12 +12,10 @@
   background-color: rgb(201, 129, 153);
   transition: 0.5s;
 }
-
 .btn-add-cart:hover {
   background-color: rgb(223, 169, 187);
   box-shadow: 0 8px rgb(186, 136, 153);
 }
-
 .btn-add-cart:active {
   background-color: rgb(201, 129, 153);
   box-shadow: 0 6px rgb(158, 100, 119);

@@ -11,7 +11,6 @@ export default function AddToCart({ product }) {
       [product.id]: currentCount + 1,
     });
   }
-
   return (
     <div className="AddToCart">
       <button className="btn-add-cart" onClick={onAddToCart}>

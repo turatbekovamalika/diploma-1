@@ -5,18 +5,18 @@ import { Link, NavLink } from "react-router-dom";
 import AddToCart from "../AddToCart/AddToCart";
 import AddProduct from "../AddProduct/AddProduct";
 import DeleteProduct from "../DeleteProduct/DeleteProduct";
-import CategoryList from "../CategoryList/CategoryList";
 
 export default function ProductList({ category }) {
   const { categories } = useContext(AppContext);
 
   const outputt = categories.map((category) => (
     <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
+      <NavLink to={`/category/${category.path}`}>
         <span>{category.name}</span>
       </NavLink>
     </li>
   ));
+
   const { products } = useContext(AppContext);
   products.sort((a, b) => {
     const weightA = a.weight ?? 0;
@@ -40,21 +40,17 @@ export default function ProductList({ category }) {
               <p>{product.color}</p>
               <span>{product.price} $</span>
             </div>
-
-            <AddToCart product={product} />
-            <DeleteProduct product={product} />
           </Link>
+          <AddToCart product={product} />
+          <DeleteProduct product={product} />
         </div>
       </div>
     ));
-
   return (
     <div className="Container">
       <div className="ProductList">
         <div className="Categoryyy">{outputt} </div>
-
         <div className="productlist2">{output}</div>
-
         <AddProduct category={category} />
       </div>
     </div>

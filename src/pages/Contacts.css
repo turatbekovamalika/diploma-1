@@ -19,6 +19,16 @@
   transition: 0.5s;
 }
 
+.Contacts a:hover {
+  color: rgb(251, 25, 25);
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(187, 98, 98);
+  transition: 0.5s;
+}
+
 .Contacts h1 {
   text-align: center;
   color: rgb(155, 73, 73);
@@ -46,58 +56,15 @@
   text-decoration: none;
 }
 
-@media (max-width: 750px) {
-  .Eyes {
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-  }
-
-  .Tel .Col-3 {
-    font-size: 15px;
-    line-height: 18px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(156, 73, 73);
-    text-align: center;
-    flex-wrap: wrap;
-  }
+.Adress {
+  text-align: center;
+  color: brown;
+  font-size: 18px;
+  transition: 0.5;
+  text-decoration: none;
 }
 
-@media (max-width: 550px) {
-  .Eyes {
-    width: 100%;
-  }
-
-  .Contacts .Col-3 {
-    font-size: 10px;
-    line-height: 12px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(156, 73, 73);
-    text-align: center;
-  }
-  .Contacts a:hover {
-    color: rgb(251, 25, 25);
-    transition: 0.5s;
-  }
-  a:hover {
-    color: rgb(187, 98, 98);
-    transition: 0.5s;
-  }
-
-  .Contacts h1 {
-    text-align: center;
-    color: rgb(155, 73, 73);
-    font-size: 10px;
-    flex: 100% 0 0;
-  }
-  .Adress {
-    text-align: center;
-    color: brown;
-    font-size: 18px;
-    transition: 0.5;
-    text-decoration: none;
-  }
-
+@media (max-width: 750px) {
   .Contacts .Col-3 {
     font-size: 17px;
     line-height: 32px;
@@ -172,6 +139,7 @@
     color: brown;
     font-size: 20px;
   }
+
   .Email {
     text-align: center;
     color: brown;

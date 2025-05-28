@@ -8,7 +8,6 @@ import "./Product.css";
 export default function Product() {
   const { params } = useMatch("/product/:path");
   const { products } = useContext(AppContext);
-
   const product = products.find((product) => product.path === params.path);
 
   if (!product) {
@@ -28,7 +27,6 @@ export default function Product() {
           />
           <div className="Des-price-button">
             <p>{product.description}</p>
-
             <div className="Price-button">
               <strong>
                 {" "}

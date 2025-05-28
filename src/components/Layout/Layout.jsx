@@ -22,12 +22,11 @@ export default function Layout(props) {
           <div className="menu_head">
             <Nav />
           </div>
-
           <NavToggle callback={toggleDrawer} />
           <Drawer open={drawerOpen} toggle={toggleDrawer} />
           <div className="Logo-cart">
-            <CartLink />
             <Auth />
+            <CartLink />
           </div>
         </div>
       </header>

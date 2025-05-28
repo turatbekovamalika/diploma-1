@@ -1,30 +1,35 @@
 import { useContext } from "react";
-import "./Auth.css";
-import { AppContext } from "../../App";
 import { logIn, logOut } from "../../firebase";
-import { Link } from "react-router-dom";
+import { AppContext } from "../../App";
+import "./Auth.css";
+import { NavLink } from "react-router-dom";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
-
-  // показывается гостю
-  let output = (
-    <span className="Sign-in">
-      {" "}
-      <button onClick={logIn}>sign out</button>
-    </span>
+  return (
+    <div className="Auth">
+      {user ? (
+        <span>
+          <div className="img-container">
+            <img onClick={logOut} src={user?.photoURL} alt="Placeholder" />
+          </div>
+        </span>
+      ) : (
+        <span className="LogOut-img">
+          <div className="img-container">
+            <NavLink to="/orders">
+              <img
+                onClick={logIn}
+                src={
+                  user?.photoURL ||
+                  "https://i.pinimg.com/474x/00/54/72/0054722b7d5a096223ebaf2620ee2440.jpg"
+                }
+                alt="Placeholder"
+              />
+            </NavLink>
+          </div>
+        </span>
+      )}
+    </div>
   );
-  // показывается пользователю
-  if (user) {
-    output = (
-      <span className="Back">
-        <Link className="Align" to="/orders">
-          {user.displayName}
-        </Link>
-
-        <button onClick={logOut}>back</button>
-      </span>
-    );
-  }
-  return <div className="Auth">{output}</div>;
 }

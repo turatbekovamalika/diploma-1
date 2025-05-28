@@ -70,29 +70,27 @@ export default function Contacts() {
           </div>
         </div>
         <p>
-          {" "}
+          <strong> Our adress : </strong>{" "}
           <a
-            className="Tel"
+            className="Adress"
             target="_blank"
             rel="noreferrer"
             href="https://www.google.com/maps?q=48.858152, 2.294433
-
-
-
 "
           >
-            <strong> Our adress : </strong> 101 Cosmetics street, 5th house
+            101 Cosmetics street, 5th house
           </a>
         </p>
 
         <p>
+          <strong>Our email: </strong>
           <a
             className="Email"
             target="_blank"
             rel="noreferrer"
             href="mailto:ajarka1334@gmail.com"
           >
-            <strong>Our email: </strong> cosmetics_01_@gmail.com
+            cosmetics_01_@gmail.com
           </a>
         </p>
 

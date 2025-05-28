@@ -7,10 +7,8 @@ import "./AddProduct.css";
 export default function AddProduct({ category }) {
   const { user } = useContext(AppContext);
   const [name, setName] = useState("");
-
   const [color, setColor] = useState("");
   const [description, setDescription] = useState("");
-
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,7 +26,6 @@ export default function AddProduct({ category }) {
   function onChangeDescription(event) {
     setDescription(event.target.value);
   }
-
   function onChangePrice(event) {
     setPrice(event.target.value);
   }

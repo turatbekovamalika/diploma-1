@@ -27,9 +27,7 @@ const AddCategory = () => {
 
       return;
     }
-
     setIsSubmitting(true);
-
     addDoc(categoryCollection, {
       name: name,
       path: name.replaceAll(" ", "-").toLocaleLowerCase(),

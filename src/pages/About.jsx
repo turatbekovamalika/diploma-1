@@ -1,11 +1,11 @@
 import "./About.css";
+import girl from "../assets/girl.png";
 
-import make from "../assets/make.jpg";
 export default function About() {
   return (
     <div className="About">
-      <div className="Row">
-        <div className="Container">
+      <div className="Container">
+        <div className="Row">
           <div className="Col-6">
             <h1>ABOUT US</h1>
             <p>
@@ -23,7 +23,7 @@ export default function About() {
           </div>
           <div className="Col-6">
             <div className="About-me">
-              <img src={make} alt="" />
+              <img src={girl} alt="" />
             </div>
           </div>
         </div>

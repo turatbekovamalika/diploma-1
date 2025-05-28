@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartList.css";
-
 import musorkaa from "../../assets/musorkaa.png";
 
 export default function CartList() {
@@ -16,18 +15,14 @@ export default function CartList() {
       [product.id]: qty,
     });
   }
-
   function onRemoveClick(product) {
     const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }
-
   const productIds = Object.keys(cart);
   const output = products
-
     .filter((product) => productIds.includes(product.id))
-
     .map((product) => (
       <div className="Container">
         <div className="CartItem">
@@ -35,23 +30,19 @@ export default function CartList() {
             {" "}
             <img src={product.picture} alt={product.name} />
           </p>
-
           <Link className="ProductSlug" to={`/products/` + product.slug}>
             {" "}
             {product.name}
           </Link>
-
           <input
             type="number"
             min={1}
             onChange={(event) => onQtyChange(product, +event.target.value)}
             value={cart[product.id]}
           />
-
           <span className="Product_price">
             {product.price * cart[product.id]} $
           </span>
-
           <img
             className="Delete_icon"
             onClick={() => onRemoveClick(product)}
