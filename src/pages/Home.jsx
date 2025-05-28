@@ -1,5 +1,4 @@
 import CategoryList from "../components/CategoryList/CategoryList";
-import ProductList from "../components/ProductList/ProductList";
 
 export default function Home() {
   return (
@@ -17,8 +16,9 @@ export default function Home() {
       </div>
 
       <aside>
-        {" "}
-        <CategoryList />{" "}
+        <div className="Container">
+          <CategoryList />
+        </div>
       </aside>
 
       <div className="Kylie-lips">
@@ -29,19 +29,21 @@ export default function Home() {
       </div>
 
       <div className="Row">
-        <div className="Col-6">
-          <p>
-            Thanks to our cosmetics, you will always look amazing in the eyes of
-            those around you, and most importantly, you will start to love
-            yourself even more.
-          </p>
-        </div>
+        <div className="Container">
+          <div className="Col-6">
+            <p>
+              Thanks to our cosmetics, you will always look amazing in the eyes
+              of those around you, and most importantly, you will start to love
+              yourself even more.
+            </p>
+          </div>
 
-        <div className="Col-6">
-          <p>
-            so beauties choose high-quality, good and most importantly at the
-            best prices
-          </p>
+          <div className="Col-6">
+            <p>
+              so beauties choose high-quality, good and most importantly at the
+              best prices
+            </p>
+          </div>
         </div>
       </div>
 
