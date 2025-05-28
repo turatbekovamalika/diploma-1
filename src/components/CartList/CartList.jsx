@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import "./CartList.css";
+import musorkaa from "../../assets/musorkaa.png";
 
 export default function CartList() {
   // получить продукты и содердижимое корзины
@@ -30,7 +31,7 @@ export default function CartList() {
           {" "}
           <img src={product.picture} alt={product.name} />
         </p>
-        <p>
+        <p className="ProductSlug">
           <Link to={"/product/" + product.slug}>{product.name}</Link>
         </p>
 
@@ -45,7 +46,8 @@ export default function CartList() {
         <img
           className="Delete_icon"
           onClick={() => onRemoveClick(product)}
-          src="src/assets/musorkaa.png"
+          src={musorkaa}
+          alt="remove"
         />
       </div>
     ));
