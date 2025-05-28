@@ -6,29 +6,35 @@
 }
 
 .OrderForm input {
-  background-color: rgb(251, 238, 243);
-  border: 1px solid brown;
+  background-color: rgb(251, 245, 247);
+  border: 1px solid rgb(194, 164, 164);
   border-radius: 10px;
-  padding: 6px;
+  padding: 12px;
   margin: 5px;
+  color: brown;
+}
+
+.OrderForm input:focus {
+  outline: none;
 }
 
 .OrderForm span {
-  color: brown;
+  color: rgb(251, 245, 247);
   display: block;
+  font-weight: 600;
 }
 
 .OrderForm h3 {
-  color: brown;
+  color: rgb(251, 245, 247);
 }
 
 .OrderForm button {
   color: white;
   margin-bottom: 50px;
   margin-top: 25px;
-  padding: 5px 30px;
+  padding: 8px 30px;
   background-color: rgb(196, 115, 115);
-  border: 1px solid brown;
+  border: 1px solid rgb(230, 135, 135);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -43,6 +49,7 @@
   border-radius: 50px;
   border: 1px solid brown;
 }
+
 .Please {
   color: white;
   font-weight: 700;
