@@ -31,7 +31,7 @@ export default function OrderForm() {
     return <div className="Empty">"Your cart is empty."</div>;
   }
   if (!user) {
-    return <div className="Please">"Please login"</div>;
+    return <div className="Please"></div>;
   }
 
   return (
