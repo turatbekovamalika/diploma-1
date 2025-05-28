@@ -33,7 +33,9 @@ export default function Layout(props) {
 
       <footer>
         {" "}
-        <Footer />
+        <div className="Container">
+          <Footer />
+        </div>
       </footer>
     </div>
   );
