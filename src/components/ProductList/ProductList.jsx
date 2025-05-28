@@ -27,32 +27,36 @@ export default function ProductList({ category }) {
   const output = products
     .filter((product) => product.category === category.id)
     .map((product) => (
-      <div className="Product" key={product.id}>
-        <Link className="About-product" to={"/product/" + product.path}>
-          <div className="Name-img">
-            <div className="Product-name"> {product.name}</div>
-            <img src={product.picture} alt={product.name} />
-          </div>
+      <div className="Container">
+        <div className="Product" key={product.id}>
+          <Link className="About-product" to={"/product/" + product.path}>
+            <div className="Name-img">
+              <div className="Product-name"> {product.name}</div>
+              <img src={product.picture} alt={product.name} />
+            </div>
 
-          <div className="Color-price">
-            {" "}
-            <p>{product.color}</p>
-            <span>{product.price} $</span>
-          </div>
+            <div className="Color-price">
+              {" "}
+              <p>{product.color}</p>
+              <span>{product.price} $</span>
+            </div>
 
-          <AddToCart product={product} />
-          <DeleteProduct product={product} />
-        </Link>
+            <AddToCart product={product} />
+            <DeleteProduct product={product} />
+          </Link>
+        </div>
       </div>
     ));
 
   return (
-    <div className="ProductList">
-      <div className="Categoryyy">{outputt} </div>
+    <div className="Container">
+      <div className="ProductList">
+        <div className="Categoryyy">{outputt} </div>
 
-      <div className="productlist2">{output}</div>
+        <div className="productlist2">{output}</div>
 
-      <AddProduct category={category} />
+        <AddProduct category={category} />
+      </div>
     </div>
   );
 }
