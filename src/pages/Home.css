@@ -196,7 +196,8 @@ button:hover {
   }
 
   .Home .Col-6 {
-    color: rgb(56, 42, 165);
+    /*color: rgb(41, 33, 104);*/
+
     padding: 0px;
     text-align: center;
     line-height: 18px;
