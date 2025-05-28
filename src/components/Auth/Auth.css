@@ -41,6 +41,10 @@
   text-decoration: none;
   color: rgb(129, 34, 34);
   font-size: 15px;
+  line-height: 1;
+
+  padding: 5px 0;
+  white-space: nowrap;
 }
 
 .Link .Align {
