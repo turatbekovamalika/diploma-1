@@ -45,6 +45,9 @@
     color: blue;
     cursor: pointer;
     transition: 0.4s all ease;
+    padding: 10px;
+    padding-left: 1px;
+    padding-right: 70px;
   }
   .Nav li:hover {
     color: violet;
