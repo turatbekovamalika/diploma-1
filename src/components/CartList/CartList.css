@@ -51,7 +51,7 @@
   font-size: 20px;
 }
 .ProductSlug {
-  max-width: 50px;
+  max-width: 80px;
 }
 .InputButton button {
   margin-left: 20px;
@@ -64,4 +64,7 @@
 .InputButton button:hover {
   background-color: rgb(188, 125, 125);
   color: rgb(245, 242, 242);
+}
+.CartItem input {
+  max-width: 35px;
 }
