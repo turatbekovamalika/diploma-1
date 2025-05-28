@@ -58,3 +58,11 @@
   background-color: rgb(233, 153, 153);
   font-size: 22px;
 }
+.Empty {
+  text-align: center;
+  height: 800px;
+  font-size: 25px;
+  padding-top: 50px;
+  color: brown;
+  font-weight: 600;
+}
