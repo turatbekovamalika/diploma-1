@@ -4,7 +4,7 @@
 }
 
 .CartList .CartItem {
-  padding: 10px 50px;
+  padding: 40px 170px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -21,6 +21,11 @@
   width: 150px;
 }
 
+.Picture {
+  margin-left: -70px;
+  margin-right: 0px;
+}
+
 .Delete_icon {
   max-width: 70px;
   margin-top: 0px;
@@ -32,11 +37,11 @@
   border-radius: 5px;
   padding: 5px 8px;
   margin-top: 40px;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-right: 25px;
   background-color: transparent;
   margin-bottom: 40px;
-  width: 20%;
+  max-width: 20px;
 }
 
 .CartList a {
@@ -45,20 +50,25 @@
   text-decoration: none;
   font-size: 18px;
   text-align: center;
-  width: 20%;
+  max-width: 50px;
 }
 
-.CartList span {
+.CartList .Product_price {
   color: rgb(196, 128, 128);
   font-family: cursive;
   font-weight: 700;
-  margin-right: 20px;
+
   font-size: 20px;
-  width: 5%;
+  padding: 40px;
 }
 
 .ProductSlug {
-  max-width: 20px;
+  max-width: 45px;
+  flex-wrap: wrap;
+  margin-right: 40px;
+  margin-left: 20px;
+  width: 35%;
+  text-align: center;
 }
 
 .InputButton button {
@@ -80,10 +90,95 @@
   cursor: pointer;
   color: brown;
   font-size: 14px;
-  max-width: 5%;
+  max-width: 10%;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
+}
+
+@media screen and (max-width: 728px) {
+  .CartList .CartItem {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(158, 104, 104);
+    border-radius: 15px;
+    margin: 25px 50px;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px 5px rgb(240, 227, 227);
+    background-color: white;
+    transition: 0.5s;
+  }
+
+  .CartList .CartItem img {
+    width: 150px;
+  }
+
+  .Picture {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .Delete_icon {
+    max-width: 70px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+
+  .CartList input {
+    border: 1px solid rgb(158, 104, 104);
+    border-radius: 5px;
+    padding: 5px 8px;
+
+    background-color: transparent;
+    margin-bottom: 40px;
+    max-width: 20px;
+  }
+
+  .CartList a {
+    color: rgb(158, 104, 104);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    max-width: 50px;
+  }
+
+  .CartList .Product_price {
+    color: rgb(196, 128, 128);
+    font-family: cursive;
+    font-weight: 700;
+
+    font-size: 20px;
+  }
+
+  .ProductSlug {
+    max-width: 45px;
+    flex-wrap: wrap;
+  }
+
+  .InputButton button {
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(211, 144, 144);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .InputButton button:hover {
+    background-color: rgb(188, 125, 125);
+    color: rgb(245, 242, 242);
+  }
+
+  .CartItem input {
+    max-width: 50px;
+    outline: none;
+    cursor: pointer;
+    color: brown;
+    font-size: 14px;
+    max-width: 20%;
+  }
 }
