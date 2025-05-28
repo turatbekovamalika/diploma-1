@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { productCollection, uploadProductPhoto } from "../../firebase";
 import { addDoc } from "firebase/firestore";
+import "./AddProduct.css";
 
 export default function AddProduct({ category }) {
   const { user } = useContext(AppContext);
@@ -77,7 +78,7 @@ export default function AddProduct({ category }) {
       <form onSubmit={onFormSubmit}>
         <h3>Create a new product</h3>
         <label>
-          Name:
+          <p className="Name"> Name:</p>
           <input
             type="text"
             value={name}
@@ -88,7 +89,7 @@ export default function AddProduct({ category }) {
         </label>
 
         <label>
-          Color:
+          <p className="Name"> Color:</p>
           <input
             type="text"
             value={color}
@@ -99,7 +100,7 @@ export default function AddProduct({ category }) {
         </label>
 
         <label>
-          Description:
+          <p className="Name"> Description:</p>
           <textarea
             type="text"
             value={description}
@@ -110,7 +111,7 @@ export default function AddProduct({ category }) {
         </label>
 
         <label>
-          Price:
+          <p className="Name"> Price:</p>
           <input
             type="number"
             value={price}
@@ -121,15 +122,16 @@ export default function AddProduct({ category }) {
           />
         </label>
         <label>
-          Picture:
+          <p className="Picture"> Picture:</p>
           <input
+            className="Input_picture"
             type="file"
             name="picture"
             onChange={onChangePicture}
             required
           />
         </label>
-        <button type="submit" disabled={isSubmitting}>
+        <button className="Button_submit" type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Submiting..." : "Submit"}
         </button>
       </form>
