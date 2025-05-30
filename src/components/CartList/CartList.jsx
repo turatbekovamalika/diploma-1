@@ -69,7 +69,7 @@ export default function CartList() {
     <div className="CartList">
       {output}
       <div className="CartTotal">
-        <strong>Итого:</strong> {total} $
+        <strong>Total:</strong> {total} $
       </div>
     </div>
   );
