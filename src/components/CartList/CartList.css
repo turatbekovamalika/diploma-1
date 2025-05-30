@@ -277,7 +277,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 12px;
   box-shadow: 0 3px 14px rgba(255, 105, 180, 0.5);
   max-width: 400px;
-  margin: 30px auto 0;
+  margin: 30px auto 20px; /* добавлен margin-bottom: 20px */
   text-align: center;
   font-size: 1.6rem;
   font-weight: 700;
