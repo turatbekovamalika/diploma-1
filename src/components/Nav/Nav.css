@@ -1,39 +1,47 @@
+.Nav {
+  padding: 10px;
+}
+
 .Nav ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
 }
 
 .Nav ul li a {
-  color: #7b241c;
+  color: #5a2c37; /* глубокий бордово-розовый */
   display: block;
   padding: 15px 20px;
-
   margin-left: 50px;
   font-weight: 700;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
   font-size: 17px;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
-.Nav ul li a:focus {
-  color: rgb(235, 230, 230);
-  background-color: #bd7d77;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 5px #bd7d77;
-  -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.2s;
-  transition: ease-out 0.5s;
-}
-
+/* Наведение курсора */
 .Nav ul li a:hover {
-  color: rgb(210, 134, 134);
+  color: #d36c94; /* нежный розовый */
+  background-color: #f9e4ea; /* светло-розовый фон для читаемости */
+  border-radius: 8px;
 }
 
-.Nav {
-  padding: 10px;
+/* Фокус (например, с клавиатуры) или активная ссылка */
+.Nav ul li a:focus,
+.Nav ul li a:active,
+.Nav ul li a.active {
+  color: white;
+  background-color: #d36c94; /* насыщенный розовый */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d36c94;
 }
 
+/* Мобильная адаптация */
 @media (max-width: 950px) {
   .Nav ul {
     flex-direction: column;
@@ -42,17 +50,14 @@
   .Nav li {
     display: inline-block;
     position: relative;
-    color: blue;
+    color: #5a2c37;
     cursor: pointer;
-    transition: 0.4s all ease;
-    padding: 10px;
-    padding-left: 1px;
-    padding-right: 70px;
+    transition: all 0.3s ease;
+    padding: 10px 70px 10px 1px;
   }
 
   .Nav li:hover {
-    color: violet;
-    transition: 0.4 all ease;
+    color: #d36c94;
   }
 
   .Nav li::after {
@@ -60,12 +65,12 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
-    bottom: -5px;
+    height: 2px;
+    bottom: -4px;
     left: 0;
-    background-color: brown;
+    background-color: #d36c94;
     transform-origin: bottom right;
-    transition: transform 0.6s ease-out;
+    transition: transform 0.4s ease-out;
   }
 
   .Nav li:hover::after {
@@ -73,34 +78,23 @@
     transform-origin: bottom left;
   }
 
-  .Nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
   .Nav ul li a {
-    color: brown;
+    color: #6c3748;
     padding: 10px;
-    display: block;
-    text-decoration: none;
     font-size: 16px;
   }
 
-  .Nav ul li a:focus {
-    color: rgb(215, 126, 126);
-    cursor: pointer;
-    -webkit-transition: ease-out 0.5s;
-    -moz-transition: ease-out 0.5s;
-    transition: ease-out 0.5s;
-    background-color: transparent;
-    box-shadow: none;
+  .Nav ul li a:focus,
+  .Nav ul li a:active,
+  .Nav ul li a.active {
+    color: white;
+    background-color: #d36c94;
+    box-shadow: 0 0 8px #d36c94;
   }
+}
 
-  @media (max-width: 650px) {
-    .Nav ul {
-      flex-direction: column;
-    }
+@media (max-width: 650px) {
+  .Nav ul {
+    flex-direction: column;
   }
 }
